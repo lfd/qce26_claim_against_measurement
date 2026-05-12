@@ -1,0 +1,1436 @@
+
+@misc{tran_locality_2023,
+	title = {Locality and {Error} {Mitigation} of {Quantum} {Circuits}},
+	url = {http://arxiv.org/abs/2303.06496},
+	doi = {10.48550/arXiv.2303.06496},
+	abstract = {In this work, we study and improve two leading error mitigation techniques, namely Probabilistic Error Cancellation (PEC) and Zero-Noise Extrapolation (ZNE), for estimating the expectation value of local observables. For PEC, we introduce a new estimator that takes into account the light cone of the unitary circuit with respect to a target local observable. Given a fixed error tolerance, the sampling overhead for the new estimator can be several orders of magnitude smaller than the standard PEC estimators. For ZNE, we also use light-cone arguments to establish an error bound that closely captures the behavior of the bias that remains after extrapolation.},
+	urldate = {2026-02-04},
+	publisher = {arXiv},
+	author = {Tran, Minh C. and Sharma, Kunal and Temme, Kristan},
+	month = mar,
+	year = {2023},
+	note = {arXiv:2303.06496 [quant-ph]},
+	keywords = {Quantum Physics},
+}
+
+@misc{filippov_scalability_2024,
+	title = {Scalability of quantum error mitigation techniques: from utility to advantage},
+	shorttitle = {Scalability of quantum error mitigation techniques},
+	url = {http://arxiv.org/abs/2403.13542},
+	doi = {10.48550/arXiv.2403.13542},
+	abstract = {Error mitigation has elevated quantum computing to the scale of hundreds of qubits and tens of layers; however, yet larger scales (deeper circuits) are needed to fully exploit the potential of quantum computing to solve practical problems otherwise intractable. Here we demonstrate three key results that pave the way for the leap from quantum utility to quantum advantage: (1) we present a thorough derivation of random and systematic errors associated to the most advanced error mitigation strategies, including probabilistic error cancellation (PEC), zero noise extrapolation (ZNE) with probabilistic error amplification, and tensor-network error mitigation (TEM); (2) we prove that TEM (i) has the lowest sampling overhead among all three techniques under realistic noise, (ii) is optimal, in the sense that it saturates the universal lower cost bound for error mitigation, and (iii) is therefore the most promising approach to quantum advantage; (3) we propose a concrete notion of practical quantum advantage in terms of the universality of algorithms, stemming from the commercial need for a problem-independent quantum simulation device. We also establish a connection between error mitigation, relying on additional measurements, and error correction, relying on additional qubits, by demonstrating that TEM with a sufficient bond dimension works similarly to an error correcting code of distance 3. We foresee that the interplay and trade-off between the two resources will be the key to a smooth transition between error mitigation and error correction, and hence between near-term and fault-tolerant quantum computers. Meanwhile, we argue that quantum computing with optimal error mitigation, relying on modest classical computer power for tensor network contraction, has the potential to reach larger scales in accurate simulation than classical methods alone.},
+	urldate = {2026-02-04},
+	publisher = {arXiv},
+	author = {Filippov, Sergey N. and Maniscalco, Sabrina and García-Pérez, Guillermo},
+	month = mar,
+	year = {2024},
+	note = {arXiv:2403.13542 [quant-ph]},
+	keywords = {Quantum Physics},
+}
+
+@misc{saki_hypothesis_2023,
+	title = {Hypothesis {Testing} for {Error} {Mitigation}: {How} to {Evaluate} {Error} {Mitigation}},
+	shorttitle = {Hypothesis {Testing} for {Error} {Mitigation}},
+	url = {http://arxiv.org/abs/2301.02690},
+	doi = {10.48550/arXiv.2301.02690},
+	abstract = {In the noisy intermediate-scale quantum (NISQ) era, quantum error mitigation will be a necessary tool to extract useful performance out of quantum devices. However, there is a big gap between the noise models often assumed by error mitigation techniques and the actual noise on quantum devices. As a consequence, there arises a gap between the theoretical expectations of the techniques and their everyday performance. Cloud users of quantum devices in particular, who often take the devices as they are, feel this gap the most. How should they parametrize their uncertainty in the usefulness of these techniques and be able to make judgement calls between resources required to implement error mitigation and the accuracy required at the algorithmic level? To answer the first question, we introduce hypothesis testing within the framework of quantum error mitigation and for the second question, we propose an inclusive figure of merit that accounts for both resource requirement and mitigation efficiency of an error mitigation implementation. The figure of merit is useful to weigh the trade-offs between the scalability and accuracy of various error mitigation methods. Finally, using the hypothesis testing and the figure of merit, we experimentally evaluate \$16\$ error mitigation pipelines composed of singular methods such as zero noise extrapolation, randomized compilation, measurement error mitigation, dynamical decoupling, and mitigation with estimation circuits. In total our data involved running \$275,640\$ circuits on two IBM quantum computers.},
+	urldate = {2026-02-04},
+	publisher = {arXiv},
+	author = {Saki, Abdullah Ash and Katabarwa, Amara and Resch, Salonik and Umbrarescu, George},
+	month = jan,
+	year = {2023},
+	note = {arXiv:2301.02690 [quant-ph]},
+	keywords = {Quantum Physics},
+}
+
+@article{khan_error_2024,
+	title = {Error {Mitigation} in the {NISQ} {Era}: {Applying} {Measurement} {Error} {Mitigation} {Techniques} to {Enhance} {Quantum} {Circuit} {Performance}},
+	volume = {12},
+	copyright = {http://creativecommons.org/licenses/by/3.0/},
+	issn = {2227-7390},
+	shorttitle = {Error {Mitigation} in the {NISQ} {Era}},
+	url = {https://www.mdpi.com/2227-7390/12/14/2235},
+	doi = {10.3390/math12142235},
+	abstract = {In quantum computing, noisy intermediate-scale quantum (NISQ) devices offer unprecedented computational capabilities but are vulnerable to errors, notably measurement inaccuracies that impact computation accuracy. This study explores the efficacy of error mitigation techniques in improving quantum circuit performance on NISQ devices. Techniques such as dynamic decoupling (DD), twirled readout error extraction (T-REx) and zero-noise extrapolation (ZNE) are examined through extensive experimentation on an ideal simulator, IBM Kyoto, and IBM Osaka quantum computers. Results reveal significant performance discrepancies across scenarios, with error mitigation techniques notably enhancing both estimator result and variance values, aligning more closely with ideal simulator outcomes. The comparison results with ideal simulator (having expected result value 0.8284) shows that T-Rex has improved results on IBM Kyoto and enhanced average expected result value from 0.09 to 0.35. Similarly, DD has improved average expected result values from 0.2492 to 0.3788 on IBM Osaka. These findings underscore the critical role of error mitigation in bolstering quantum computation reliability. The results suggest that selection of mitigation technique depends upon quantum circuit and its depth, type of hardware and operations to be performed.},
+	language = {en},
+	number = {14},
+	urldate = {2026-02-04},
+	journal = {Mathematics},
+	publisher = {Multidisciplinary Digital Publishing Institute},
+	author = {Khan, Misha Urooj and Kamran, Muhammad Ahmad and Khan, Wajiha Rahim and Ibrahim, Malik Muhammad and Ali, Muhammad Umair and Lee, Seung Won},
+	month = jan,
+	year = {2024},
+	keywords = {measurement error mitigation, NISQ, quantum computing},
+	pages = {2235},
+}
+
+@inproceedings{mcdonough_automated_2022,
+	title = {Automated quantum error mitigation based on probabilistic error reduction},
+	url = {https://ieeexplore.ieee.org/document/10025519/},
+	doi = {10.1109/QCS56647.2022.00015},
+	abstract = {Current quantum computers suffer from a level of noise that prohibits extracting useful results directly from longer computations. The figure of merit in many near-term quantum algorithms is an expectation value measured at the end of the computation, which experiences a bias in the presence of hardware noise. A systematic way to remove such bias is probabilistic error cancellation (PEC). PEC requires a full characterization of the noise and introduces a sampling overhead that increases exponentially with circuit depth, prohibiting high-depth circuits at realistic noise levels. Probabilistic error reduction (PER) is a related quantum error mitigation method that systematically reduces the sampling overhead at the cost of reintroducing bias. In combination with zero-noise extrapolation, PER can yield expectation values with an accuracy comparable to PEC. Noise reduction through PER is broadly applicable to near-term algorithms, and the automated implementation of PER is thus desirable for facilitating its widespread use. To this end, we present an automated quantum error mitigation software framework that includes noise tomography and application of PER to user-specified circuits. We provide a multi-platform Python package that implements a recently developed Pauli noise tomography (PNT) technique for learning a sparse Pauli noise model and exploits a Pauli noise scaling method to carry out PER. We also provide software tools that leverage a previously developed toolchain, employing PyGSTi for gate set tomography and providing a functionality to use the software Mitiq for PER and zero-noise extrapolation to obtain error-mitigated expectation values on a user-defined circuit.},
+	urldate = {2026-02-04},
+	booktitle = {2022 {IEEE}/{ACM} {Third} {International} {Workshop} on {Quantum} {Computing} {Software} ({QCS})},
+	author = {McDonough, Benjamin and Mari, Andrea and Shammah, Nathan and Stemen, Nathaniel T. and Wahl, Misty and Zeng, William J. and Orth, Peter P.},
+	month = nov,
+	year = {2022},
+	keywords = {Extrapolation, Noise reduction, noisy intermediate-scale quantum computing, probabilistic error reduction, Probabilistic logic, Quantum algorithm, quantum error mitigation, quantum noise tomography, Software algorithms, Systematics, Tomography, zero noise extrapolation},
+	pages = {83--93},
+}
+
+@article{zhang_demonstrating_2025,
+	title = {Demonstrating quantum error mitigation on logical qubits},
+	volume = {17},
+	issn = {2041-1723},
+	url = {https://www.nature.com/articles/s41467-025-67768-4},
+	doi = {10.1038/s41467-025-67768-4},
+	language = {en},
+	number = {1},
+	urldate = {2026-02-04},
+	journal = {Nature Communications},
+	author = {Zhang, Aosai and Xie, Haipeng and Gao, Yu and Yang, Jia-Nan and Bao, Zehang and Zhu, Zitian and Chen, Jiachen and Wang, Ning and Zhang, Chuanyu and Zhong, Jiarun and Xu, Shibo and Wang, Ke and Wu, Yaozu and Jin, Feitong and Zhu, Xuhao and Zou, Yiren and Tan, Ziqi and Cui, Zhengyi and Shen, Fanhao and Li, Tingting and Han, Yihang and He, Yiyang and Liu, Gongyu and Shen, Jiayuan and Wang, Han and Wang, Yanzhe and Dong, Hang and Deng, Jinfeng and Li, Hekang and Wang, Zhen and Song, Chao and Guo, Qiujiang and Zhang, Pengfei and Li, Ying and Wang, H.},
+	month = dec,
+	year = {2025},
+	pages = {1021},
+}
+
+@article{qin_error_2023,
+	title = {Error statistics and scalability of quantum error mitigation formulas},
+	volume = {9},
+	issn = {2056-6387},
+	url = {https://www.nature.com/articles/s41534-023-00707-7},
+	doi = {10.1038/s41534-023-00707-7},
+	abstract = {Abstract
+            
+              Quantum computing promises advantages over classical computing in many problems. Nevertheless, noise in quantum devices prevents most quantum algorithms from achieving the quantum advantage. Quantum error mitigation provides a variety of protocols to handle such noise using minimal qubit resources. While some of those protocols have been implemented in experiments for a few qubits, it remains unclear whether error mitigation will be effective in quantum circuits with tens to hundreds of qubits. In this paper, we apply statistics principles to quantum error mitigation and analyse the scaling behaviour of its intrinsic error. We find that the error increases linearly
+              O
+              (
+              ϵ
+              N
+              ) with the gate number
+              N
+              before mitigation and sublinearly
+              
+                
+                  \$\$O(\{{\textbackslash}epsilon \}{\textasciicircum}\{\{{\textbackslash}prime\} \}\{N\}{\textasciicircum}\{{\textbackslash}gamma \})\$\$
+                  
+                    
+                      O
+                      
+                        (
+                        
+                          
+                            
+                              ϵ
+                            
+                            
+                              ′
+                            
+                          
+                          
+                            
+                              N
+                            
+                            
+                              γ
+                            
+                          
+                        
+                        )
+                      
+                    
+                  
+                
+              
+              after mitigation, where
+              γ
+               ≈ 0.5,
+              ϵ
+              is the error rate of a quantum gate, and
+              
+                
+                  \$\$\{{\textbackslash}epsilon \}{\textasciicircum}\{\{{\textbackslash}prime\} \}\$\$
+                  
+                    
+                      
+                        ϵ
+                      
+                      
+                        ′
+                      
+                    
+                  
+                
+              
+              is a protocol-dependent factor. The
+              
+                
+                  \$\${\textbackslash}sqrt\{N\}\$\$
+                  
+                    
+                      
+                        N
+                      
+                    
+                  
+                
+              
+              scaling is a consequence of the law of large numbers, and it indicates that error mitigation can suppress the error by a larger factor in larger circuits. We propose the importance Clifford sampling as a key technique for error mitigation in large circuits to obtain this result.},
+	language = {en},
+	number = {1},
+	urldate = {2026-02-04},
+	journal = {npj Quantum Information},
+	author = {Qin, Dayue and Chen, Yanzhu and Li, Ying},
+	month = apr,
+	year = {2023},
+	pages = {35},
+}
+
+@article{liao_machine_2024,
+	title = {Machine {Learning} for {Practical} {Quantum} {Error} {Mitigation}},
+	volume = {6},
+	issn = {2522-5839},
+	url = {http://arxiv.org/abs/2309.17368},
+	doi = {10.1038/s42256-024-00927-2},
+	abstract = {Quantum computers progress toward outperforming classical supercomputers, but quantum errors remain their primary obstacle. The key to overcoming errors on near-term devices has emerged through the field of quantum error mitigation, enabling improved accuracy at the cost of additional run time. Here, through experiments on state-of-the-art quantum computers using up to 100 qubits, we demonstrate that without sacrificing accuracy machine learning for quantum error mitigation (ML-QEM) drastically reduces the cost of mitigation. We benchmark ML-QEM using a variety of machine learning models -- linear regression, random forests, multi-layer perceptrons, and graph neural networks -- on diverse classes of quantum circuits, over increasingly complex device-noise profiles, under interpolation and extrapolation, and in both numerics and experiments. These tests employ the popular digital zero-noise extrapolation method as an added reference. Finally, we propose a path toward scalable mitigation by using ML-QEM to mimic traditional mitigation methods with superior runtime efficiency. Our results show that classical machine learning can extend the reach and practicality of quantum error mitigation by reducing its overheads and highlight its broader potential for practical quantum computations.},
+	number = {12},
+	urldate = {2026-02-04},
+	journal = {Nature Machine Intelligence},
+	author = {Liao, Haoran and Wang, Derek S. and Sitdikov, Iskandar and Salcedo, Ciro and Seif, Alireza and Minev, Zlatko K.},
+	month = nov,
+	year = {2024},
+	note = {arXiv:2309.17368 [quant-ph]},
+	keywords = {Quantum Physics, Computer Science - Machine Learning},
+	pages = {1478--1486},
+}
+
+@inproceedings{majumdar_best_2023,
+	title = {Best {Practices} for {Quantum} {Error} {Mitigation} with {Digital} {Zero}-{Noise} {Extrapolation}},
+	volume = {01},
+	url = {https://ieeexplore.ieee.org/document/10313813/},
+	doi = {10.1109/QCE57702.2023.00102},
+	abstract = {Digital zero-noise extrapolation (dZNE) has emerged as a common approach for quantum error mitigation (QEM) due to its conceptual simplicity, accessibility, and resource efficiency. In practice, however, properly applying dZNE to extend the computational reach of noisy quantum processors is rife with subtleties. Here, based on literature review and original experiments on noisy simulators and real quantum hardware, we define best practices for QEM with dZNE for each step of the workflow, including noise amplification, execution on the quantum device, extrapolation to the zero-noise limit, and composition with other QEM methods. We anticipate that this effort to establish best practices for dZNE will be extended to other QEM methods, leading to more reproducible and rigorous calculations on noisy quantum hardware. The full version of this paper can be found in Ref. [1].},
+	urldate = {2026-02-04},
+	booktitle = {2023 {IEEE} {International} {Conference} on {Quantum} {Computing} and {Engineering} ({QCE})},
+	author = {Majumdar, Ritajit and Rivero, Pedro and Metz, Friedrike and Hasan, Areeq and Wang, Derek S.},
+	month = sep,
+	year = {2023},
+	keywords = {Quantum computing, Extrapolation, quantum error mitigation, Best practices, Bibliographies, gate folding, Hardware, identity insertion, Noise measurement, Program processors, quantum applications, quantum software, zero-noise extrapolation},
+	pages = {881--887},
+}
+
+@article{cai_quantum_2023,
+	title = {Quantum {Error} {Mitigation}},
+	volume = {95},
+	issn = {0034-6861, 1539-0756},
+	url = {http://arxiv.org/abs/2210.00921},
+	doi = {10.1103/RevModPhys.95.045005},
+	abstract = {For quantum computers to successfully solve real-world problems, it is necessary to tackle the challenge of noise: the errors which occur in elementary physical components due to unwanted or imperfect interactions. The theory of quantum fault tolerance can provide an answer in the long term, but in the coming era of `NISQ' machines we must seek to mitigate errors rather than completely remove them. This review surveys the diverse methods that have been proposed for quantum error mitigation, assesses their in-principle efficacy, and then describes the hardware demonstrations achieved to date. We identify the commonalities and limitations among the methods, noting how mitigation methods can be chosen according to the primary type of noise present, including algorithmic errors. Open problems in the field are identified and we discuss the prospects for realising mitigation-based devices that can deliver quantum advantage with an impact on science and business.},
+	number = {4},
+	urldate = {2026-02-04},
+	journal = {Reviews of Modern Physics},
+	author = {Cai, Zhenyu and Babbush, Ryan and Benjamin, Simon C. and Endo, Suguru and Huggins, William J. and Li, Ying and McClean, Jarrod R. and O'Brien, Thomas E.},
+	month = dec,
+	year = {2023},
+	note = {arXiv:2210.00921 [quant-ph]},
+	keywords = {Quantum Physics},
+	pages = {045005},
+}
+
+@inproceedings{wahl_zero_2023,
+	title = {Zero {Noise} {Extrapolation} on {Logical} {Qubits} by {Scaling} the {Error} {Correction} {Code} {Distance}},
+	volume = {01},
+	url = {https://ieeexplore.ieee.org/document/10313873/},
+	doi = {10.1109/QCE57702.2023.00103},
+	abstract = {In this work, we migrate the quantum error mitigation technique of Zero-Noise Extrapolation (ZNE) to fault-tolerant quantum computing. We employ ZNE on logically encoded qubits rather than physical qubits. This approach will be useful in a regime where quantum error correction (QEC) is implementable but the number of qubits available for QEC is limited. Apart from illustrating the utility of a traditional ZNE approach (circuit-level unitary folding) for the QEC regime, we propose a novel noise scaling ZNE method specifically tailored to QEC: distance scaled ZNE (DS-ZNE). DS-ZNE scales the distance of the error correction code, and thereby the resulting logical error rate, and utilizes this code distance as the scaling ‘knob’ for ZNE. Logical qubit error rates are scaled until the maximum achievable code distance for a fixed number of physical qubits, and lower error rates (i.e., effectively higher code distances) are achieved via extrapolation techniques migrated from traditional ZNE. Furthermore, to maximize physical qubit utilization over the ZNE experiments, logical executions at code distances lower than the maximum allowed by the physical qubits on the quantum device are executed in parallel across the device, thereby reducing overall circuit execution costs. We validate our proposal with numerical simulation for the surface code and confirm that ZNE lowers the logical error rates and increases the effective code distance beyond the physical capability of the quantum device. For instance, at a physical code distance of 11, the DS-ZNE effective code distance is 17, and at a physical code distance of 13, the DS-ZNE effective code distance is 21. When the proposed technique is compared against unitary folding ZNE under the constraint of a fixed number of executions of the quantum device, DS-ZNE outperforms unitary folding by up to 92\% in terms of the post-ZNE logical error rate.},
+	urldate = {2026-02-04},
+	booktitle = {2023 {IEEE} {International} {Conference} on {Quantum} {Computing} and {Engineering} ({QCE})},
+	author = {Wahl, Misty A. and Mari, Andrea and Shammah, Nathan and Zeng, William J. and Ravi, Gokul Subramanian},
+	month = sep,
+	year = {2023},
+	keywords = {Extrapolation, quantum error mitigation, zero noise extrapolation, code distance scaling, Codes, distance-scaled zero noise extrapolation, Error analysis, Fault tolerant systems, Logic gates, Mitiq, Numerical simulation, Quantum error correction, Qubit, unitary folding},
+	pages = {888--897},
+}
+
+@misc{larose_error_2022,
+	title = {Error mitigation increases the effective quantum volume of quantum computers},
+	url = {http://arxiv.org/abs/2203.05489},
+	doi = {10.48550/arXiv.2203.05489},
+	abstract = {Quantum volume is a single-number metric which, loosely speaking, reports the number of usable qubits on a quantum computer. While improvements to the underlying hardware are a direct means of increasing quantum volume, the metric is "full-stack" and has also been increased by improvements to software, notably compilers. We extend this latter direction by demonstrating that error mitigation, a type of indirect compilation, increases the effective quantum volume of several quantum computers. Importantly, this increase occurs while taking the same number of overall samples. We encourage the adoption of quantum volume as a benchmark for assessing the performance of error mitigation techniques.},
+	urldate = {2026-02-04},
+	publisher = {arXiv},
+	author = {LaRose, Ryan and Mari, Andrea and Russo, Vincent and Strano, Dan and Zeng, William J.},
+	month = apr,
+	year = {2022},
+	note = {arXiv:2203.05489 [quant-ph]},
+	keywords = {Quantum Physics},
+}
+
+@misc{amin_quantum_2023,
+	title = {Quantum error mitigation in quantum annealing},
+	url = {http://arxiv.org/abs/2311.01306},
+	doi = {10.48550/arXiv.2311.01306},
+	abstract = {Quantum Error Mitigation (QEM) presents a promising near-term approach to reduce error when estimating expectation values in quantum computing. Here, we introduce QEM techniques tailored for quantum annealing, using Zero-Noise Extrapolation (ZNE). We implement ZNE through zero-temperature extrapolation as well as energy-time rescaling. We conduct experimental investigations into the quantum critical dynamics of a transverse-field Ising spin chain, demonstrating the successful mitigation of thermal noise through both of these techniques. Moreover, we show that energy-time rescaling effectively mitigates control errors in the coherent regime where the effect of thermal noise is minimal. Our ZNE results agree with exact calculations of the coherent evolution over a range of annealing times that exceeds the coherent annealing range by almost an order of magnitude.},
+	urldate = {2026-02-04},
+	publisher = {arXiv},
+	author = {Amin, Mohammad H. and King, Andrew D. and Raymond, Jack and Harris, Richard and Bernoudy, William and Berkley, Andrew J. and Boothby, Kelly and Smirnov, Anatoly and Altomare, Fabio and Babcock, Michael and Baron, Catia and Connor, Jake and Dehn, Martin and Enderud, Colin and Hoskinson, Emile and Huang, Shuiyuan and Johnson, Mark W. and Ladizinsky, Eric and Lanting, Trevor and MacDonald, Allison J. R. and Marsden, Gaelen and Molavi, Reza and Oh, Travis and Poulin-Lamarre, Gabriel and Ramp, Hugh and Rich, Chris and Clavera, Berta Trullas and Tsai, Nicholas and Volkmann, Mark and Whittaker, Jed D. and Yao, Jason and Heinsdorf, Niclas and Kaushal, Nitin and Nocera, Alberto and Franz, Marcel},
+	month = nov,
+	year = {2023},
+	note = {arXiv:2311.01306 [quant-ph]},
+	keywords = {Quantum Physics},
+}
+
+@misc{hour_improving_2024,
+	title = {Improving {Zero}-noise {Extrapolation} for {Quantum}-gate {Error} {Mitigation} using a {Noise}-aware {Folding} {Method}},
+	url = {http://arxiv.org/abs/2401.12495},
+	doi = {10.48550/arXiv.2401.12495},
+	abstract = {Recent thousand-qubit processors represent a significant hardware advancement, but current limitations prevent effective quantum error correction (QEC), necessitating reliance on quantum error mitigation (QEM) to enhance result fidelity from quantum computers. Our paper introduces a noise-aware folding technique that enhances Zero-Noise Extrapolation (ZNE) by leveraging the noise characteristics of target quantum hardware to fold circuits more efficiently. Unlike traditional ZNE approaches assuming uniform error distribution, our method redistributes noise using calibration data based on hardware noise models. By employing a noise-adaptive compilation method combined with our proposed folding mechanism, we enhance the ZNE accuracy of quantum gate-based computing using superconducting quantum computers. This paper highlights the uniqueness of our method, summarizes noise accumulation, presents the scaling algorithm, and compares the reliability of our method with those of existing models using linear extrapolation model. Experimental results show that compared to existing folding methods, our approach achieved a 35\% improvement on quantum computer simulators and a 31\% improvement on real quantum computers, demonstrating the effectiveness of our proposed approach.},
+	urldate = {2026-02-04},
+	publisher = {arXiv},
+	author = {Hour, Leanghok and Go, Myeongseong and Han, Youngsun},
+	month = may,
+	year = {2024},
+	note = {arXiv:2401.12495 [quant-ph]},
+	keywords = {Quantum Physics},
+}
+
+@article{jnane_quantum_2024,
+	title = {Quantum {Error} {Mitigated} {Classical} {Shadows}},
+	volume = {5},
+	issn = {2691-3399},
+	url = {https://link.aps.org/doi/10.1103/PRXQuantum.5.010324},
+	doi = {10.1103/PRXQuantum.5.010324},
+	abstract = {Classical shadows enable us to learn many properties of a quantum state
+              
+                ρ
+              
+              with very few measurements. However, near-term and early fault-tolerant quantum computers will only be able to prepare noisy quantum states
+              
+                ρ
+              
+              and it is thus a considerable challenge to efficiently learn properties of an ideal, noise-free state
+              
+                
+                  ρ
+                  id
+                
+              
+              . We consider error mitigation techniques, such as probabilistic error cancelation (PEC), zero noise extrapolation (ZNE), and symmetry verification (SV), which have been developed for mitigating errors in single expected value measurements and generalize them for mitigating errors in classical shadows. We find that PEC is the most natural candidate and thus develop a thorough theoretical framework for PEC shadows with the following rigorous theoretical guarantees: PEC shadows are an unbiased estimator for the ideal quantum state
+              
+                
+                  ρ
+                  id
+                
+              
+              ; the sample complexity for simultaneously predicting many linear properties of
+              
+                
+                  ρ
+                  id
+                
+              
+              is identical to that of the conventional shadows approach up to a multiplicative factor, which is the sample overhead due to error mitigation. Due to efficient postprocessing of shadows, this overhead does not depend directly on the number of qubits but rather grows exponentially with the number of noisy gates. The broad set of tools introduced in this work may be instrumental in exploiting near-term and early fault-tolerant quantum computers: we demonstrate in detailed numerical simulations a range of practical applications of quantum computers that will significantly benefit from our techniques.
+            
+            
+              
+              
+                
+                  Published by the American Physical Society
+                  2024},
+	language = {en},
+	number = {1},
+	urldate = {2026-02-04},
+	journal = {PRX Quantum},
+	author = {Jnane, Hamza and Steinberg, Jonathan and Cai, Zhenyu and Nguyen, H. Chau and Koczor, Bálint},
+	month = feb,
+	year = {2024},
+	pages = {010324},
+}
+
+@article{henao_adaptive_2023,
+	title = {Adaptive quantum error mitigation using pulse-based inverse evolutions},
+	volume = {9},
+	issn = {2056-6387},
+	url = {https://www.nature.com/articles/s41534-023-00785-7},
+	doi = {10.1038/s41534-023-00785-7},
+	abstract = {Abstract
+            Quantum Error Mitigation (QEM) enables the extraction of high-quality results from the presently-available noisy quantum computers. In this approach, the effect of the noise on observables of interest can be mitigated using multiple measurements without additional hardware overhead. Unfortunately, current QEM techniques are limited to weak noise or lack scalability. In this work, we introduce a QEM method termed ‘Adaptive KIK’ that adapts to the noise level of the target device, and therefore, can handle moderate-to-strong noise. The implementation of the method is experimentally simple — it does not involve any tomographic information or machine-learning stage, and the number of different quantum circuits to be implemented is independent of the size of the system. Furthermore, we have shown that it can be successfully integrated with randomized compiling for handling both incoherent as well as coherent noise. Our method handles spatially correlated and time-dependent noise which enables us to run shots over the scale of days or more despite the fact that noise and calibrations change in time. Finally, we discuss and demonstrate why our results suggest that gate calibration protocols should be revised when using QEM. We demonstrate our findings in the IBM quantum computers and through numerical simulations.},
+	language = {en},
+	number = {1},
+	urldate = {2026-02-04},
+	journal = {npj Quantum Information},
+	author = {Henao, Ivan and Santos, Jader P. and Uzdin, Raam},
+	month = nov,
+	year = {2023},
+	pages = {120},
+}
+
+@article{maupin_error_2024,
+	title = {Error mitigation, optimization, and extrapolation on a trapped ion testbed},
+	volume = {110},
+	issn = {2469-9926, 2469-9934},
+	url = {http://arxiv.org/abs/2307.07027},
+	doi = {10.1103/PhysRevA.110.032416},
+	abstract = {Current noisy intermediate-scale quantum (NISQ) trapped-ion devices are subject to errors which can significantly impact the accuracy of calculations if left unchecked. A form of error mitigation called zero noise extrapolation (ZNE) can decrease an algorithm's sensitivity to these errors without increasing the number of required qubits. Here, we explore different methods for integrating this error mitigation technique into the Variational Quantum Eigensolver (VQE) algorithm for calculating the ground state of the HeH+ molecule at 0.8 Angstrom in the presence of realistic noise. Using the Quantum Scientific Computing Open User Testbed (QSCOUT) trapped-ion device, we test three methods of scaling noise for extrapolation: time-stretching the two-qubit gates, scaling the sideband amplitude parameter, and inserting two-qubit gate identity operations into the ansatz circuit. We find time-stretching and sideband amplitude scaling fail to scale the noise on our particular hardware in a way that can be directly extrapolated to zero noise. Scaling our noise with global gate identity insertions and extrapolating after variational optimization, we achieve an estimate of the ground state energy within -0.004 +- 0.04 Hartree; outside chemical accuracy, but greatly improved over our non-error-mitigated estimate with error 0.127 +- 0.008 Hartree. Our results show that the efficacy of this error mitigation technique depends on choosing the correct implementation for a given device architecture.},
+	number = {3},
+	urldate = {2026-02-04},
+	journal = {Physical Review A},
+	author = {Maupin, Oliver G. and Burch, Ashlyn D. and Ruzic, Brandon and Yale, Christopher G. and Russo, Antonio and Lobser, Daniel S. and Revelle, Melissa C. and Chow, Matthew N. and Clark, Susan M. and Landahl, Andrew J. and Love, Peter J.},
+	month = sep,
+	year = {2024},
+	note = {arXiv:2307.07027 [quant-ph]},
+	keywords = {Quantum Physics},
+	pages = {032416},
+}
+
+@article{kurita_synergetic_2023,
+	title = {Synergetic quantum error mitigation by randomized compiling and zero-noise extrapolation for the variational quantum eigensolver},
+	volume = {7},
+	issn = {2521-327X},
+	url = {http://arxiv.org/abs/2212.11198},
+	doi = {10.22331/q-2023-11-20-1184},
+	abstract = {We propose a quantum error mitigation strategy for the variational quantum eigensolver (VQE) algorithm. We find, via numerical simulation, that very small amounts of coherent noise in VQE can cause substantially large errors that are difficult to suppress by conventional mitigation methods, and yet our proposed mitigation strategy is able to significantly reduce these errors. The proposed strategy is a combination of previously reported techniques, namely randomized compiling (RC) and zero-noise extrapolation (ZNE). Intuitively, randomized compiling turns coherent errors in the circuit into stochastic Pauli errors, which facilitates extrapolation to the zero-noise limit when evaluating the cost function. Our numerical simulation of VQE for small molecules shows that the proposed strategy can mitigate energy errors induced by various types of coherent noise by up to two orders of magnitude.},
+	urldate = {2026-02-04},
+	journal = {Quantum},
+	author = {Kurita, Tomochika and Qassim, Hammam and Ishii, Masatoshi and Oshima, Hirotaka and Sato, Shintaro and Emerson, Joseph},
+	month = nov,
+	year = {2023},
+	note = {arXiv:2212.11198 [quant-ph]},
+	keywords = {Quantum Physics, Physics - Chemical Physics},
+	pages = {1184},
+}
+
+@article{russo_testing_2023,
+	title = {Testing {Platform}-{Independent} {Quantum} {Error} {Mitigation} on {Noisy} {Quantum} {Computers}},
+	volume = {4},
+	issn = {2689-1808},
+	url = {https://ieeexplore.ieee.org/document/10219054/},
+	doi = {10.1109/TQE.2023.3305232},
+	abstract = {We apply quantum error mitigation (QEM) techniques to a variety of benchmark problems and quantum computers to evaluate the performance of QEM in practice. To do so, we define an empirically motivated, resource-normalized metric of the improvement of error mitigation, which we call the improvement factor, and calculate this metric for each experiment we perform. The experiments we perform consist of zero-noise extrapolation and probabilistic error cancellation applied to two benchmark problems run on IBM, IonQ, and Rigetti quantum computers, as well as noisy quantum computer simulators. Our results show that error mitigation is, on average, more beneficial than no error mitigation—even when normalized by the additional resources used—but also emphasize that the performance of QEM depends on the underlying computer.},
+	urldate = {2026-02-04},
+	journal = {IEEE Transactions on Quantum Engineering},
+	author = {Russo, Vincent and Mari, Andrea and Shammah, Nathan and LaRose, Ryan and Zeng, William J.},
+	year = {2023},
+	keywords = {Quantum computing, Noise measurement, Qubit, Benchmark testing, Superconducting devices},
+	pages = {1--18},
+}
+
+@misc{filippov_scalable_2023,
+	title = {Scalable tensor-network error mitigation for near-term quantum computing},
+	url = {http://arxiv.org/abs/2307.11740},
+	doi = {10.48550/arXiv.2307.11740},
+	abstract = {Until fault-tolerance becomes implementable at scale, quantum computing will heavily rely on noise mitigation techniques. While methods such as zero noise extrapolation with probabilistic error amplification (ZNE-PEA) and probabilistic error cancellation (PEC) have been successfully tested on hardware recently, their scalability to larger circuits may be limited. Here, we introduce the tensor-network error mitigation (TEM) algorithm, which acts in post-processing to correct the noise-induced errors in estimations of physical observables. The method consists of the construction of a tensor network representing the inverse of the global noise channel affecting the state of the quantum processor, and the consequent application of the map to informationally complete measurement outcomes obtained from the noisy state. TEM does therefore not require additional quantum operations other than the implementation of informationally complete POVMs, which can be achieved through randomised local measurements. The key advantage of TEM is that the measurement overhead is quadratically smaller than in PEC. We test TEM extensively in numerical simulations in different regimes. We find that TEM can be applied to circuits of twice the depth compared to what is achievable with PEC under realistic conditions with sparse Pauli-Lindblad noise, such as those in [E. van den Berg et al., Nat. Phys. (2023)]. By using Clifford circuits, we explore the capabilities of the method in wider and deeper circuits with lower noise levels. We find that in the case of 100 qubits and depth 100, both PEC and ZNE fail to produce accurate results by using \${\textbackslash}sim 10{\textasciicircum}5\$ shots, while TEM succeeds.},
+	urldate = {2026-02-04},
+	publisher = {arXiv},
+	author = {Filippov, Sergei and Leahy, Matea and Rossi, Matteo A. C. and García-Pérez, Guillermo},
+	month = jul,
+	year = {2023},
+	note = {arXiv:2307.11740 [quant-ph]},
+	keywords = {Quantum Physics},
+}
+
+@article{pascuzzi_computationally_2022,
+	title = {Computationally efficient zero-noise extrapolation for quantum-gate-error mitigation},
+	volume = {105},
+	issn = {2469-9926, 2469-9934},
+	url = {https://link.aps.org/doi/10.1103/PhysRevA.105.042406},
+	doi = {10.1103/PhysRevA.105.042406},
+	language = {en},
+	number = {4},
+	urldate = {2026-02-04},
+	journal = {Physical Review A},
+	author = {Pascuzzi, Vincent R. and He, Andre and Bauer, Christian W. and De Jong, Wibe A. and Nachman, Benjamin},
+	month = apr,
+	year = {2022},
+	pages = {042406},
+}
+
+@misc{liu_quantum_2025,
+	title = {Quantum {Error} {Mitigation} for {Sampling} {Algorithms}},
+	url = {http://arxiv.org/abs/2502.11285},
+	doi = {10.48550/arXiv.2502.11285},
+	abstract = {Recent experimental breakthroughs have signalled the imminent arrival of the early fault-tolerant era. However, for a considerable period in the foreseeable future, relying solely on quantum error correction for full error suppression will remain extremely challenging due to its substantial hardware overhead. Additional help from quantum error mitigation (QEM) is essential for bridging this gap towards achieving quantum advantage. The application of QEM has so far been restricted to expectation value estimation, leaving its extension to sampling-based algorithms -- which is expected to play a pivotal role in the early fault-tolerant era -- an unresolved challenge. In this work, we present a framework for applying any QEM techniques to obtain the error-mitigated output distribution, showing that this incurs no greater cost than estimating a single observable. We also devised a way to sample from this distribution and constructed an explicit scheme for applying any QEM methods to quantum phase estimation, which can be generalised to other sampling algorithms. Numerical experiments were conducted to validate the efficacy of these methods. We believe our methods significantly broaden the scope of QEM, extending its applicability to most algorithms of practical interest and forming a crucial step towards realising quantum advantage.},
+	urldate = {2026-02-04},
+	publisher = {arXiv},
+	author = {Liu, Kecheng and Cai, Zhenyu},
+	month = feb,
+	year = {2025},
+	note = {arXiv:2502.11285 [quant-ph]},
+	keywords = {Quantum Physics},
+}
+
+@article{takagi_fundamental_2022,
+	title = {Fundamental limits of quantum error mitigation},
+	volume = {8},
+	issn = {2056-6387},
+	url = {https://www.nature.com/articles/s41534-022-00618-z},
+	doi = {10.1038/s41534-022-00618-z},
+	abstract = {Abstract
+            The inevitable accumulation of errors in near-future quantum devices represents a key obstacle in delivering practical quantum advantages, motivating the development of various quantum error-mitigation methods. Here, we derive fundamental bounds concerning how error-mitigation algorithms can reduce the computation error as a function of their sampling overhead. Our bounds place universal performance limits on a general error-mitigation protocol class. We use them to show (1) that the sampling overhead that ensures a certain computational accuracy for mitigating local depolarizing noise in layered circuits scales exponentially with the circuit depth for general error-mitigation protocols and (2) the optimality of probabilistic error cancellation among a wide class of strategies in mitigating the local dephasing noise on an arbitrary number of qubits. Our results provide a means to identify when a given quantum error-mitigation strategy is optimal and when there is potential room for improvement.},
+	language = {en},
+	number = {1},
+	urldate = {2026-02-04},
+	journal = {npj Quantum Information},
+	author = {Takagi, Ryuji and Endo, Suguru and Minagawa, Shintaro and Gu, Mile},
+	month = sep,
+	year = {2022},
+	pages = {114},
+}
+
+@article{kim_error_2025,
+	title = {Error mitigation with stabilized noise in superconducting quantum processors},
+	volume = {16},
+	issn = {2041-1723},
+	url = {https://www.nature.com/articles/s41467-025-62820-9},
+	doi = {10.1038/s41467-025-62820-9},
+	language = {en},
+	number = {1},
+	urldate = {2026-02-04},
+	journal = {Nature Communications},
+	author = {Kim, Youngseok and Govia, Luke C. G. and Dane, Andrew and Van Den Berg, Ewout and Zajac, David M. and Mitchell, Bradley and Liu, Yinyu and Balakrishnan, Karthik and Keefe, George and Stabile, Adam and Pritchett, Emily and Stehlik, Jiri and Kandala, Abhinav},
+	month = sep,
+	year = {2025},
+	pages = {8439},
+}
+
+@article{dutkiewicz_error_2025,
+	title = {Error {Mitigation} and {Circuit} {Division} for {Early} {Fault}-{Tolerant} {Quantum} {Phase} {Estimation}},
+	volume = {6},
+	issn = {2691-3399},
+	url = {https://link.aps.org/doi/10.1103/mlmy-yskj},
+	doi = {10.1103/mlmy-yskj},
+	abstract = {As fully fault-tolerant quantum computers capable of solving useful problems remain a distant goal, we anticipate an era of  during which limited error correction is available. We propose a framework for designing early fault-tolerant algorithms by trading between error-correction overhead and residual logical noise, and apply it to quantum phase estimation (QPE). We develop a quantum-Fourier-transform- (QFT) based QPE technique that is robust to global depolarizing noise and outperforms the previous state of the art at low and moderate noise rates. We further introduce the explicitly unbiased maximum-likelihood estimator (EUMLE), a data-processing technique that mitigates  errors in QFT-based QPE schemes. EUMLE provides consistent asymptotically normal error-mitigated estimates, addressing the open problem of extending error mitigation beyond expectation-value estimation. Applying this scheme to the ground-state problem of the two-dimensional Hubbard model and various molecular Hamiltonians, we find that we can roughly halve the number of physical qubits with a
+              
+                ∼
+                10
+              
+              times wall-clock time overhead, but that further reduction causes a steep run-time increase. This work provides an end-to-end analysis of early fault-tolerance cost reductions and space-time trade-offs, and identifies which areas can be improved in the future.},
+	language = {en},
+	number = {4},
+	urldate = {2026-02-04},
+	journal = {PRX Quantum},
+	author = {Dutkiewicz, Alicja and Polla, Stefano and Scheurer, Maximilian and Gogolin, Christian and Huggins, William J. and O’Brien, Thomas E.},
+	month = oct,
+	year = {2025},
+	pages = {040318},
+}
+
+@article{takagi_universal_2023,
+	title = {Universal {Sampling} {Lower} {Bounds} for {Quantum} {Error} {Mitigation}},
+	volume = {131},
+	issn = {0031-9007, 1079-7114},
+	url = {https://link.aps.org/doi/10.1103/PhysRevLett.131.210602},
+	doi = {10.1103/PhysRevLett.131.210602},
+	language = {en},
+	number = {21},
+	urldate = {2026-02-04},
+	journal = {Physical Review Letters},
+	author = {Takagi, Ryuji and Tajima, Hiroyasu and Gu, Mile},
+	month = nov,
+	year = {2023},
+	pages = {210602},
+}
+
+@article{govia_bounding_2025,
+	title = {Bounding the {Systematic} {Error} in {Quantum} {Error} {Mitigation} due to {Model} {Violation}},
+	volume = {6},
+	issn = {2691-3399},
+	url = {https://link.aps.org/doi/10.1103/PRXQuantum.6.010354},
+	doi = {10.1103/PRXQuantum.6.010354},
+	abstract = {Quantum error mitigation is a promising route to achieving quantum utility, and potentially quantum advantage in the near term. Many state-of-the-art error-mitigation schemes use knowledge of the errors in the quantum processor, which opens up the question of the extent to which inaccuracy in the error model impacts the performance of error mitigation. In this work, we develop a methodology to efficiently compute upper bounds on the impact of error-model inaccuracy in error mitigation. Our protocols require no additional experiments and instead rely on comparisons between the error model and the error-learning data from which the model is generated. We demonstrate the efficacy of our methodology by deploying it on an IBM Quantum superconducting qubit quantum processor, and through numerical simulation of standard error models. We show that our estimated upper bounds are typically close to the worst observed performance of error mitigation on random circuits. Our methodology can also be understood as an operationally meaningful metric to assess the quality of error models and we further extend our methodology to allow for comparison between error models. Finally, contrary to what one might expect, we show that observable error in noisy layered circuits of sufficient depth is not always maximized by a Clifford circuit, which may be of independent interest.},
+	language = {en},
+	number = {1},
+	urldate = {2026-02-04},
+	journal = {PRX Quantum},
+	author = {Govia, L.C.G. and Majumder, S. and Barron, S.V. and Mitchell, B. and Seif, A. and Kim, Y. and Wood, C.J. and Pritchett, E.J. and Merkel, S.T. and McKay, D.C.},
+	month = mar,
+	year = {2025},
+	pages = {010354},
+}
+
+@article{jose_error-mitigation-aided_2022,
+	title = {Error-{Mitigation}-{Aided} {Optimization} of {Parameterized} {Quantum} {Circuits}: {Convergence} {Analysis}},
+	volume = {3},
+	issn = {2689-1808},
+	shorttitle = {Error-{Mitigation}-{Aided} {Optimization} of {Parameterized} {Quantum} {Circuits}},
+	url = {https://ieeexplore.ieee.org/document/9991059/},
+	doi = {10.1109/TQE.2022.3229747},
+	abstract = {Variational quantum algorithms (VQAs) offer the most promising path to obtaining quantum advantages via noisy intermediate-scale quantum (NISQ) processors. Such systems leverage classical optimization to tune the parameters of a parameterized quantum circuit (PQC). The goal is minimizing a cost function that depends on measurement outputs obtained from the PQC. Optimization is typically implemented via stochastic gradient descent (SGD). On NISQ computers, gate noise due to imperfections and decoherence affects the stochastic gradient estimates by introducing a bias. Quantum error mitigation (QEM) techniques can reduce the estimation bias without requiring any increase in the number of qubits, but they in turn cause an increase in the variance of the gradient estimates. This work studies the impact of quantum gate noise on the convergence of SGD for the variational eigensolver (VQE), a fundamental instance of VQAs. The main goal is ascertaining conditions under which QEM can enhance the performance of SGD for VQEs. It is shown that quantum gate noise induces a nonzero error-floor on the convergence error of SGD (evaluated with respect to a reference noiseless PQC), which depends on the number of noisy gates, the strength of the noise, as well as the eigenspectrum of the observable being measured and minimized. In contrast, with QEM, any arbitrarily small error can be obtained. Furthermore, for error levels attainable with or without QEM, QEM can reduce the number of required iterations, but only as long as the quantum noise level is sufficiently large, and a sufficiently large number of measurements is allowed at each SGD iteration. Numerical examples for a max-cut problem corroborate the main theoretical findings.},
+	urldate = {2026-02-04},
+	journal = {IEEE Transactions on Quantum Engineering},
+	author = {Jose, Sharu Theresa and Simeone, Osvaldo},
+	year = {2022},
+	keywords = {Optimization, Quantum computing, Quantum algorithm, quantum error mitigation, Noise measurement, Qubit, Convergence, quantum gate noise, variational quantum algorithms},
+	pages = {1--19},
+}
+
+@article{seif_shadow_2023,
+	title = {Shadow {Distillation}: {Quantum} {Error} {Mitigation} with {Classical} {Shadows} for {Near}-{Term} {Quantum} {Processors}},
+	volume = {4},
+	issn = {2691-3399},
+	shorttitle = {Shadow {Distillation}},
+	url = {https://link.aps.org/doi/10.1103/PRXQuantum.4.010303},
+	doi = {10.1103/PRXQuantum.4.010303},
+	language = {en},
+	number = {1},
+	urldate = {2026-02-04},
+	journal = {PRX Quantum},
+	author = {Seif, Alireza and Cian, Ze-Pei and Zhou, Sisi and Chen, Senrui and Jiang, Liang},
+	month = jan,
+	year = {2023},
+	pages = {010303},
+}
+
+@article{hicks_active_2022,
+	title = {Active readout-error mitigation},
+	volume = {105},
+	issn = {2469-9926, 2469-9934},
+	url = {https://link.aps.org/doi/10.1103/PhysRevA.105.012419},
+	doi = {10.1103/PhysRevA.105.012419},
+	language = {en},
+	number = {1},
+	urldate = {2026-02-04},
+	journal = {Physical Review A},
+	author = {Hicks, Rebecca and Kobrin, Bryce and Bauer, Christian W. and Nachman, Benjamin},
+	month = jan,
+	year = {2022},
+	pages = {012419},
+}
+
+@article{weaving_benchmarking_2023,
+	title = {Benchmarking noisy intermediate scale quantum error mitigation strategies for ground state preparation of the {HCl} molecule},
+	volume = {5},
+	issn = {2643-1564},
+	url = {https://link.aps.org/doi/10.1103/PhysRevResearch.5.043054},
+	doi = {10.1103/PhysRevResearch.5.043054},
+	language = {en},
+	number = {4},
+	urldate = {2026-02-04},
+	journal = {Physical Review Research},
+	author = {Weaving, Tim and Ralli, Alexis and Kirby, William M. and Love, Peter J. and Succi, Sauro and Coveney, Peter V.},
+	month = oct,
+	year = {2023},
+	pages = {043054},
+}
+
+@article{kiss_quantum_2025,
+	title = {Quantum error mitigation for {Fourier} moment computation},
+	volume = {111},
+	issn = {2470-0010, 2470-0029},
+	url = {https://link.aps.org/doi/10.1103/PhysRevD.111.034504},
+	doi = {10.1103/PhysRevD.111.034504},
+	abstract = {Hamiltonian moments in Fourier space—expectation values of the unitary evolution operator under a Hamiltonian at different times—provide a convenient framework to understand quantum systems. They offer insights into the energy distribution, higher-order dynamics, response functions, correlation information, and physical properties. This paper focuses on the computation of Fourier moments within the context of a nuclear effective field theory on superconducting quantum hardware. The study integrates echo verification and noise renormalization into Hadamard tests using control reversal gates. These techniques, combined with purification and error suppression methods, effectively address quantum hardware decoherence. The analysis, conducted using noise models, reveals a significant reduction in noise strength by two orders of magnitude. Moreover, quantum circuits involving up to 266  gates over five qubits demonstrate high accuracy under these methodologies when run on IBM superconducting quantum devices.},
+	language = {en},
+	number = {3},
+	urldate = {2026-02-04},
+	journal = {Physical Review D},
+	author = {Kiss, Oriel and Grossi, Michele and Roggero, Alessandro},
+	month = feb,
+	year = {2025},
+	pages = {034504},
+}
+
+@article{van_den_berg_model-free_2022,
+	title = {Model-free readout-error mitigation for quantum expectation values},
+	volume = {105},
+	url = {https://link.aps.org/doi/10.1103/PhysRevA.105.032620},
+	doi = {10.1103/PhysRevA.105.032620},
+	abstract = {Measurements on current quantum processors are subject to hardware imperfections that lead to readout errors. These errors manifest themselves as a bias in quantum expectation values. Here, we consider a very simple method that forces the bias in the expectation value to appear as a multiplicative factor that can be measured directly and removed at the cost of an increase in the sampling complexity for the observable. This method was previously discussed by Karalekas et al. [Quantum Sci. Technol. 5, 024003 (2020)] for the product of single-qubit readout-error models. Here, we formally analyze the method and show that it can be applied to general noise models. In particular, we show the method does not need to assume any specific form of the noise model and requires only that the noise is “weak” to avoid excessive sampling overhead. We prove bounds relating the error in the expectation value to the sample complexity.},
+	number = {3},
+	urldate = {2026-02-04},
+	journal = {Physical Review A},
+	publisher = {American Physical Society},
+	author = {van den Berg, Ewout and Minev, Zlatko K. and Temme, Kristan},
+	month = mar,
+	year = {2022},
+	pages = {032620},
+}
+
+@article{krebsbach_optimization_2022,
+	title = {Optimization of {Richardson} extrapolation for quantum error mitigation},
+	volume = {106},
+	url = {https://link.aps.org/doi/10.1103/PhysRevA.106.062436},
+	doi = {10.1103/PhysRevA.106.062436},
+	abstract = {Quantum error mitigation is a key concept for the development of practical applications based on current noisy intermediate-scale quantum devices. One of the most promising methods is Richardson extrapolation to the zero noise limit. While its main idea is rather simple, the full potential of Richardson extrapolation has not been completely uncovered yet. We give an in-depth analysis of the relevant parameters of Richardson extrapolation and propose an optimized protocol for its implementation. This protocol allows for a precise control of the increase in statistical uncertainty and lays the foundation for a significant improvement of the mitigation performance achieved by increasing the number of nodes. Furthermore, we present a set of nodes that, on average, outperforms the linear, exponential, or Chebyshev nodes frequently used for Richardson extrapolation without requiring any additional resources.},
+	number = {6},
+	urldate = {2026-02-04},
+	journal = {Physical Review A},
+	publisher = {American Physical Society},
+	author = {Krebsbach, Michael and Trauzettel, Björn and Calzona, Alessio},
+	month = dec,
+	year = {2022},
+	pages = {062436},
+}
+
+@misc{kim_enhanced_2025,
+	title = {Enhanced {Extrapolation}-{Based} {Quantum} {Error} {Mitigation} {Using} {Repetitive} {Structure} in {Quantum} {Algorithms}},
+	url = {http://arxiv.org/abs/2507.23314},
+	doi = {10.48550/arXiv.2507.23314},
+	abstract = {Quantum error mitigation is a crucial technique for suppressing errors especially in noisy intermediate-scale quantum devices, enabling more reliable quantum computation without the overhead of full error correction. Zero-Noise Extrapolation (ZNE), which we mainly consider in this work, is one of prominent quantum error mitigation methods. For algorithms with deep circuits - such as iterative quantum algorithms involving multiple oracle calls - ZNE's effectiveness is significantly degraded under high noise. Extrapolation based on such low-fidelity data often yields inaccurate estimates and requires substantial overhead. In this study, we propose a lightweight, extrapolation-based error mitigation framework tailored for structured quantum algorithms composed of repeating operational blocks. The proposed method characterizes the error of the repeated core operational block, rather than the full algorithm, using shallow circuits. Extrapolation is used to estimate the block fidelity, followed by a reconstruction of the mitigated success probability. We validate our method via simulations of the 6-qubit Grover's algorithm on IBM's Aer simulator, then further evaluating it on the real 127-qubit IBM Quantum system based on Eagle r3 under a physical noise environment. Our results, particularly those from Aer simulator, demonstrate that the core block's error follows a highly consistent exponential decay. This allows our technique to achieve robust error mitigation, overcoming the limitations of conventional ZNE which is often compromised by statistically unreliable data from near-random behavior under heavy noise. In low-noise conditions, our method approaches theoretical success probability, outperforms ZNE. In high-noise conditions, ZNE fails to mitigate errors due to overfitting of its extrapolation data, whereas our method achieves over a 20\% higher success probability.},
+	urldate = {2026-02-04},
+	publisher = {arXiv},
+	author = {Kim, Boseon and Song, Wooyeong and Bae, Kwangil and Lee, Wonhyuk and Sohn, IlKwon},
+	month = jul,
+	year = {2025},
+	note = {arXiv:2507.23314 [quant-ph]},
+	keywords = {Quantum Physics},
+}
+
+@phdthesis{white_managing_2025,
+	title = {{MANAGING} {ERRORS} {IN} {QUANTUM} {METROLOGY} {VIA} {QUANTUM} {ERROR} {MITIGATION}},
+	url = {https://jscholarship.library.jhu.edu/handle/1774.2/70562},
+	abstract = {Quantum sensing is an emerging field of quantum technology, which has already seen practical application and shows promise for future development. However, quantum sensors, like all quantum devices, are plagued by noise, which limits their performance. This dissertation develops a theoretical framework for mitigating noise in quantum sensing protocols, by leveraging techniques from quantum error mitigation and quantum control. In chapters 1 and 2, we begin by reviewing the basics of quantum sensing and noise, including the theory of open quantum systems, zero-noise extrapolation, and the filter function formalism. We then apply these basic frameworks to the problem of interest. In chapter 3, we consider the case of mitigating Markovian noise, studying the application of quantum error mitigation to Ramsey interferometry. Theoretical results are derived demonstrating the effectiveness of zero-noise extrapolation in reducing the effect of Markovian noise to improve device performance. In chapter 4, we move on to discuss the case of non-Markovian correlated noise. By combining zero-noise extrapolation with elements from quantum control and the filter function formalism, we once again demonstrate the effectiveness of zero-noise extrapolation in mitigating device noise—this time, correlated noise, beyond the scope for which zero-noise extrapolation was originally developed. In addition to demonstrating performance improvements, this cross-pollination of techniques from error mitigation and quantum control suggests a broad avenue for future research and development of hybrid strategies. By unifying concepts from quantum error mitigation and advanced control protocols, we open new pathways toward more robust and adaptable quantum sensors capable of operating in a variety of noise environments. This union not only enhances the capabilities of current-generation devices but also provides a theoretical foundation for addressing noise processes in near-term and future devices. As such, the work presented here lays the groundwork for comprehensive, multi-faceted error management approaches that could ultimately accelerate the maturation of quantum sensing technologies.},
+	language = {en\_US},
+	urldate = {2026-02-04},
+	school = {Johns Hopkins University},
+	author = {White, Zackary},
+	month = mar,
+	year = {2025},
+}
+
+@article{jin_noisy_2025,
+	title = {Noisy probabilistic error cancellation and generalized physical implementability},
+	volume = {8},
+	issn = {2399-3650},
+	url = {https://www.nature.com/articles/s42005-025-02217-8},
+	doi = {10.1038/s42005-025-02217-8},
+	language = {en},
+	number = {1},
+	urldate = {2026-02-04},
+	journal = {Communications Physics},
+	author = {Jin, Tian-Ren and Zhang, Yu-Ran and Xu, Kai and Fan, Heng},
+	month = jul,
+	year = {2025},
+	pages = {296},
+}
+
+@article{niroula_error_2025,
+	title = {Error {Mitigation} {Thresholds} in {Noisy} {Random} {Quantum} {Circuits}},
+	volume = {112},
+	issn = {2469-9950, 2469-9969},
+	url = {http://arxiv.org/abs/2302.04278},
+	doi = {10.1103/qsmz-9kkh},
+	abstract = {Extracting useful information from noisy near-term quantum simulations requires error mitigation strategies. A broad class of these strategies rely on precise characterization of the noise source. We study the robustness of probabilistic error cancellation and tensor network error mitigation when the noise is imperfectly characterized. We adapt an Imry-Ma argument to predict the existence of a threshold in the robustness of these error mitigation methods for random spatially local circuits in spatial dimensions \$D {\textbackslash}geq 2\$: noise characterization disorder below the threshold rate allows for error mitigation up to times that scale with the number of qubits. For one-dimensional circuits, by contrast, mitigation fails at an \${\textbackslash}mathcal\{O\}(1)\$ time for any imperfection in the characterization of disorder. As a result, error mitigation is only a practical method for sufficiently well-characterized noise. We discuss further implications for tests of quantum computational advantage, fault-tolerant probes of measurement-induced phase transitions, and quantum algorithms in near-term devices.},
+	number = {2},
+	urldate = {2026-02-04},
+	journal = {Physical Review B},
+	author = {Niroula, Pradeep and Gopalakrishnan, Sarang and Gullans, Michael J.},
+	month = jul,
+	year = {2025},
+	note = {arXiv:2302.04278 [quant-ph]},
+	keywords = {Quantum Physics, Condensed Matter - Statistical Mechanics},
+	pages = {024206},
+}
+
+@article{bultrini_unifying_2023,
+	title = {Unifying and benchmarking state-of-the-art quantum error mitigation techniques},
+	volume = {7},
+	issn = {2521-327X},
+	url = {http://arxiv.org/abs/2107.13470},
+	doi = {10.22331/q-2023-06-06-1034},
+	abstract = {Error mitigation is an essential component of achieving a practical quantum advantage in the near term, and a number of different approaches have been proposed. In this work, we recognize that many state-of-the-art error mitigation methods share a common feature: they are data-driven, employing classical data obtained from runs of different quantum circuits. For example, Zero-noise extrapolation (ZNE) uses variable noise data and Clifford-data regression (CDR) uses data from near-Clifford circuits. We show that Virtual Distillation (VD) can be viewed in a similar manner by considering classical data produced from different numbers of state preparations. Observing this fact allows us to unify these three methods under a general data-driven error mitigation framework that we call UNIfied Technique for Error mitigation with Data (UNITED). In certain situations, we find that our UNITED method can outperform the individual methods (i.e., the whole is better than the individual parts). Specifically, we employ a realistic noise model obtained from a trapped ion quantum computer to benchmark UNITED, as well as other state-of-the-art methods, in mitigating observables produced from random quantum circuits and the Quantum Alternating Operator Ansatz (QAOA) applied to Max-Cut problems with various numbers of qubits, circuit depths and total numbers of shots. We find that the performance of different techniques depends strongly on shot budgets, with more powerful methods requiring more shots for optimal performance. For our largest considered shot budget (\$10{\textasciicircum}\{10\}\$), we find that UNITED gives the most accurate mitigation. Hence, our work represents a benchmarking of current error mitigation methods and provides a guide for the regimes when certain methods are most useful.},
+	language = {en},
+	urldate = {2026-02-04},
+	journal = {Quantum},
+	author = {Bultrini, Daniel and Gordon, Max Hunter and Czarnik, Piotr and Arrasmith, Andrew and Cerezo, M. and Coles, Patrick J. and Cincio, Lukasz},
+	month = jun,
+	year = {2023},
+	note = {arXiv:2107.13470 [quant-ph]},
+	keywords = {Quantum Physics},
+	pages = {1034},
+}
+
+@article{hilder_fault-tolerant_2022,
+	title = {Fault-{Tolerant} {Parity} {Readout} on a {Shuttling}-{Based} {Trapped}-{Ion} {Quantum} {Computer}},
+	volume = {12},
+	issn = {2160-3308},
+	url = {https://link.aps.org/doi/10.1103/PhysRevX.12.011032},
+	doi = {10.1103/PhysRevX.12.011032},
+	language = {en},
+	number = {1},
+	urldate = {2026-02-04},
+	journal = {Physical Review X},
+	author = {Hilder, J. and Pijn, D. and Onishchenko, O. and Stahl, A. and Orth, M. and Lekitsch, B. and Rodriguez-Blanco, A. and Müller, M. and Schmidt-Kaler, F. and Poschinger, U. G.},
+	month = feb,
+	year = {2022},
+	pages = {011032},
+}
+
+@article{noel_observation_2022,
+	title = {Observation of measurement-induced quantum phases in a trapped-ion quantum computer},
+	volume = {18},
+	issn = {1745-2473, 1745-2481},
+	url = {http://arxiv.org/abs/2106.05881},
+	doi = {10.1038/s41567-022-01619-7},
+	abstract = {Many-body open quantum systems balance internal dynamics against decoherence from interactions with an environment. Here, we explore this balance via random quantum circuits implemented on a trapped ion quantum computer, where the system evolution is represented by unitary gates with interspersed projective measurements. As the measurement rate is varied, a purification phase transition is predicted to emerge at a critical point akin to a fault-tolerent threshold. We probe the "pure" phase, where the system is rapidly projected to a deterministic state conditioned on the measurement outcomes, and the "mixed" or "coding" phase, where the initial state becomes partially encoded into a quantum error correcting codespace. We find convincing evidence of the two phases and show numerically that, with modest system scaling, critical properties of the transition clearly emerge.},
+	number = {7},
+	urldate = {2026-02-04},
+	journal = {Nature Physics},
+	author = {Noel, Crystal and Niroula, Pradeep and Zhu, Daiwei and Risinger, Andrew and Egan, Laird and Biswas, Debopriyo and Cetina, Marko and Gorshkov, Alexey V. and Gullans, Michael J. and Huse, David A. and Monroe, Christopher},
+	month = jul,
+	year = {2022},
+	note = {arXiv:2106.05881 [quant-ph]},
+	keywords = {Quantum Physics},
+	pages = {760--764},
+}
+
+@article{hirasaki_detection_2023,
+	title = {Detection of temporal fluctuation in superconducting qubits for quantum error mitigation},
+	volume = {123},
+	issn = {0003-6951},
+	url = {https://doi.org/10.1063/5.0166739},
+	doi = {10.1063/5.0166739},
+	abstract = {We have investigated instability of a superconducting quantum computer by continuously monitoring the qubit output. We found that qubits exhibit a step-like change in the error rates. This change is repeatedly observed, and each step persists for several minutes. By analyzing the correlation between the increased errors and anomalous variance of the output, we demonstrate quantum error mitigation based on post-selection. We have reduced the errors from 5.4\% to 1.6\% in a Bell state measurement and from 17.5\% to 12.0\% in a quantum volume circuit. Numerical analysis on the proposed method was also conducted.},
+	number = {18},
+	urldate = {2026-02-04},
+	journal = {Applied Physics Letters},
+	author = {Hirasaki, Yuta and Daimon, Shunsuke and Itoko, Toshinari and Kanazawa, Naoki and Saitoh, Eiji},
+	month = nov,
+	year = {2023},
+	pages = {184002},
+}
+
+@inproceedings{senapati_towards_2023,
+	title = {Towards {Redefining} the {Reproducibility} in {Quantum} {Computing}: {A} {Data} {Analysis} {Approach} on {NISQ} {Devices}},
+	volume = {01},
+	shorttitle = {Towards {Redefining} the {Reproducibility} in {Quantum} {Computing}},
+	url = {https://ieeexplore.ieee.org/document/10313593/},
+	doi = {10.1109/QCE57702.2023.00060},
+	abstract = {Although the building of quantum computers has kept making rapid progress in recent years, noise is still the main challenge for any application to leverage the power of quantum computing. Existing works addressing noise in quantum devices proposed noise reduction when deploying a quantum algorithm to a specified quantum computer. The reproducibility issue of quantum algorithms has been raised since the noise levels vary on different quantum computers. Importantly, existing works largely ignore the fact that the noise of quantum devices varies as time goes by. Therefore, reproducing the results on the same hardware will even become a problem. We analyze the reproducibility of quantum machine learning (QML) algorithms based on daily model training and execution data collection. Our analysis shows a correlation between our QML models' test accuracy and quantum computer hardware's calibration features. We also demonstrate that noisy simulators for quantum computers are not a reliable tool for quantum machine learning applications.},
+	urldate = {2026-02-04},
+	booktitle = {2023 {IEEE} {International} {Conference} on {Quantum} {Computing} and {Engineering} ({QCE})},
+	author = {Senapati, Priyabrata and Wang, Zhepeng and Jiang, Weiwen and Humble, Travis S and Fang, Bo and Xu, Shuai and Guan, Qiang},
+	month = sep,
+	year = {2023},
+	keywords = {Quantum computing, quantum computing, Quantum algorithm, Analytical models, Computational modeling, Computers, Machine learning, Performance evaluation, quantum machine learning, quantum noise, reproducibility},
+	pages = {468--474},
+}
+
+@misc{lorenz_systematic_2025,
+	title = {Systematic benchmarking of quantum computers: status and recommendations},
+	shorttitle = {Systematic benchmarking of quantum computers},
+	url = {http://arxiv.org/abs/2503.04905},
+	doi = {10.48550/arXiv.2503.04905},
+	abstract = {Architectures for quantum computing can only be scaled up when they are accompanied by suitable benchmarking techniques. The document provides a comprehensive overview of the state and recommendations for systematic benchmarking of quantum computers. Benchmarking is crucial for assessing the performance of quantum computers, including the hardware, software, as well as algorithms and applications. The document highlights key aspects such as component-level, system-level, software-level, HPC-level, and application-level benchmarks. Component-level benchmarks focus on the performance of individual qubits and gates, while system-level benchmarks evaluate the entire quantum processor. Software-level benchmarks consider the compiler's efficiency and error mitigation techniques. HPC-level and cloud benchmarks address integration with classical systems and cloud platforms, respectively. Application-level benchmarks measure performance in real-world use cases. The document also discusses the importance of standardization to ensure reproducibility and comparability of benchmarks, and highlights ongoing efforts in the quantum computing community towards establishing these benchmarks. Recommendations for future steps emphasize the need for developing standardized evaluation routines and integrating benchmarks with broader quantum technology activities.},
+	urldate = {2026-02-04},
+	publisher = {arXiv},
+	author = {Lorenz, Jeanette Miriam and Monz, Thomas and Eisert, Jens and Reitzner, Daniel and Schopfer, Félicien and Barbaresco, Frédéric and Kurowski, Krzysztof and Schoot, Ward van der and Strohm, Thomas and Senellart, Jean and Perrault, Cécile M. and Knufinke, Martin and Amodjee, Ziyad and Giardini, Mattia},
+	month = mar,
+	year = {2025},
+	note = {arXiv:2503.04905 [quant-ph]},
+	keywords = {Quantum Physics},
+}
+
+@article{zheng_bayesian_2023,
+	title = {A {Bayesian} {Approach} for {Characterizing} and {Mitigating} {Gate} and {Measurement} {Errors}},
+	volume = {4},
+	url = {https://dl.acm.org/doi/10.1145/3563397},
+	doi = {10.1145/3563397},
+	abstract = {Various noise models have been developed in quantum computing study to describe the propagation and effect of the noise that is caused by imperfect implementation of hardware. Identifying parameters such as gate and readout error rates is critical to these models. We use a Bayesian inference approach to identify posterior distributions of these parameters such that they can be characterized more elaborately. By characterizing the device errors in this way, we can further improve the accuracy of quantum error mitigation. Experiments conducted on IBM’s quantum computing devices suggest that our approach provides better error mitigation performance than existing techniques used by the vendor. Also, our approach outperforms the standard Bayesian inference method in some scenarios.},
+	number = {2},
+	urldate = {2026-02-04},
+	journal = {ACM Transactions on Quantum Computing},
+	author = {Zheng, Muqing and Li, Ang and Terlaky, Tamás and Yang, Xiu},
+	month = feb,
+	year = {2023},
+	pages = {11:1--11:21},
+}
+
+@article{faculty_of_engineering_kampala_international_university_uganda_statistical_2024,
+	title = {Statistical {Challenges} and {Opportunities} in {Quantum} {Computing}: {A} {Review}},
+	volume = {9},
+	issn = {25790803},
+	shorttitle = {Statistical {Challenges} and {Opportunities} in {Quantum} {Computing}},
+	url = {https://www.idosr.org/statistical-challenges-and-opportunities-in-quantum-computing-a-review/},
+	doi = {10.59298/JCAS/2024/91.153337001},
+	abstract = {Quantum computing represents a transformative paradigm shift in computational capabilities by leveraging quantum mechanical principles such as superposition and entanglement. This article explores the intersection of quantum computing with statistical methods, focusing on key areas such as quantum error correction (QEC), statistical inference, data interpretation, and optimization of quantum algorithms. Quantum error correction is essential due to quantum systems' susceptibility to errors, requiring advanced statistical techniques for error detection and mitigation without collapsing quantum states. Statistical inference and data interpretation in quantum computing face challenges posed by the probabilistic nature of quantum data, necessitating novel statistical frameworks for accurate analysis and prediction. Optimizing quantum algorithms involves refining existing algorithms like Shor's and Grover's, developing new algorithms through statistical principles, and analyzing performance using statistical methods. Integration of classical and quantum approaches enhances algorithmic efficiency and reliability. Furthermore, quantum machine learning (QML) and big data analytics capitalize on quantum computing's potential to process vast datasets efficiently, underpinned by statistical methodologies for algorithm optimization and data management. Despite challenges such as quantum hardware limitations and noise interference, ongoing research aims to advance statistical frameworks, optimize algorithms, and explore new applications, ensuring statistical methods remain pivotal in harnessing the full potential of quantum computing across diverse domains.},
+	language = {en},
+	number = {1},
+	urldate = {2026-02-04},
+	journal = {IDOSR JOURNAL OF COMPUTER AND APPLIED SCIENCES},
+	author = {{Faculty of Engineering Kampala International University Uganda} and Njoki, Wanjiku Amani},
+	month = jun,
+	year = {2024},
+	pages = {33--37},
+}
+
+@misc{prodius_robust_2025,
+	title = {Robust design under uncertainty in quantum error mitigation},
+	url = {http://arxiv.org/abs/2307.05302},
+	doi = {10.48550/arXiv.2307.05302},
+	abstract = {Error mitigation techniques are crucial to achieving near-term quantum advantage. Classical post-processing of quantum computation outcomes is a popular approach for error mitigation, which includes methods such as Zero Noise Extrapolation, Virtual Distillation, and learning-based error mitigation. However, these techniques have limitations due to the propagation of uncertainty resulting from a finite shot number of the quantum measurement. In this work, we introduce general and unbiased methods for quantifying the uncertainty and error of error-mitigated observables, based on the strategic sampling of error mitigation outcomes. We then extend our approach to demonstrate the optimization of performance and robustness of error mitigation under uncertainty. To illustrate our methods, we apply them to Clifford Data Regression and Zero Noise Extrapolation in the ground state of the XY model simulated using IBM's Toronto and depolarizing noise models, respectively. In particular, we optimize the distribution of the training circuits for Clifford Data Regression, while for Zero Noise Extrapolation we optimize the choice of the noise levels and the allocation of shots. While our methods are readily applicable to any post-processing-based error mitigation approach, in practice they must not be prohibitively expensive - even though they perform optimizations of the error mitigation hyperparameters requiring sampling of a statistical distribution of error mitigation outcomes. By leveraging surrogate-based optimization, we show our methods can efficiently perform optimal design for a Zero Noise Extrapolation implementation. We then further demonstrate the transferability of learned Zero Noise Extrapolation hyperparameters to other similar circuits.},
+	urldate = {2026-02-04},
+	publisher = {arXiv},
+	author = {Prodius, Maksym and Czarnik, Piotr and McKerns, Michael and Sornborger, Andrew T. and Cincio, Lukasz},
+	month = may,
+	year = {2025},
+	note = {arXiv:2307.05302 [quant-ph]},
+	keywords = {Quantum Physics},
+}
+
+@article{wu_erasure_2022,
+	title = {Erasure conversion for fault-tolerant quantum computing in alkaline earth {Rydberg} atom arrays},
+	volume = {13},
+	issn = {2041-1723},
+	url = {https://www.nature.com/articles/s41467-022-32094-6},
+	doi = {10.1038/s41467-022-32094-6},
+	abstract = {Abstract
+            
+              Executing quantum algorithms on error-corrected logical qubits is a critical step for scalable quantum computing, but the requisite numbers of qubits and physical error rates are demanding for current experimental hardware. Recently, the development of error correcting codes tailored to particular physical noise models has helped relax these requirements. In this work, we propose a qubit encoding and gate protocol for
+              171
+              Yb neutral atom qubits that converts the dominant physical errors into erasures, that is, errors in known locations. The key idea is to encode qubits in a metastable electronic level, such that gate errors predominantly result in transitions to disjoint subspaces whose populations can be continuously monitored via fluorescence. We estimate that 98\% of errors can be converted into erasures. We quantify the benefit of this approach via circuit-level simulations of the surface code, finding a threshold increase from 0.937\% to 4.15\%. We also observe a larger code distance near the threshold, leading to a faster decrease in the logical error rate for the same number of physical qubits, which is important for near-term implementations. Erasure conversion should benefit any error correcting code, and may also be applied to design new gates and encodings in other qubit platforms.},
+	language = {en},
+	number = {1},
+	urldate = {2026-02-04},
+	journal = {Nature Communications},
+	author = {Wu, Yue and Kolkowitz, Shimon and Puri, Shruti and Thompson, Jeff D.},
+	month = aug,
+	year = {2022},
+	pages = {4657},
+}
+
+@misc{regent_awesome_2025,
+	title = {Awesome {Quantum} {Computing} {Experiments}: {Benchmarking} {Experimental} {Progress} {Towards} {Fault}-{Tolerant} {Quantum} {Computation}},
+	shorttitle = {Awesome {Quantum} {Computing} {Experiments}},
+	url = {http://arxiv.org/abs/2507.03678},
+	doi = {10.48550/arXiv.2507.03678},
+	abstract = {Achieving fault-tolerant quantum computation (FTQC) demands simultaneous progress in physical qubit performance and quantum error correction (QEC). This work reviews and benchmarks experimental advancements towards FTQC across leading platforms, including trapped ions, superconducting circuits, neutral atoms, NV centers, and semiconductors. We analyze key physical metrics like coherence times, entanglement error, and system size (qubit count), fitting observed exponential trends to characterize multi-order-of-magnitude improvements over the past two decades. At the logical level, we survey the implementation landscape of QEC codes, tracking realized parameters \$[[n, k, d]]\$ and complexity from early demonstrations to recent surface and color code experiments. Synthesizing these physical and logical benchmarks reveals substantial progress enabled by underlying hardware improvements, while also outlining persistent challenges towards scalable FTQC. The experimental databases and analysis code underpinning this review are publicly available at https://github.com/francois-marie/awesome-quantum-computing-experiments.},
+	urldate = {2026-02-05},
+	publisher = {arXiv},
+	author = {Régent, François-Marie Le},
+	month = jul,
+	year = {2025},
+	note = {arXiv:2507.03678 [quant-ph]},
+	keywords = {Quantum Physics},
+}
+
+@misc{khan_quantum_2025,
+	address = {Rochester, NY},
+	type = {{SSRN} {Scholarly} {Paper}},
+	title = {Quantum {Software} {Engineering}: {Developing} {Algorithms} for {IBM} {Quantum} {Systems}},
+	shorttitle = {Quantum {Software} {Engineering}},
+	url = {https://papers.ssrn.com/abstract=5708423},
+	abstract = {Quantum Software Engineering (QSE) represents the convergence of quantum computing principles with modern software engineering practices, forming a structured framework for building, testing, and deploying quantum applications. This discipline is gaining traction as quantum hardware, particularly IBM Quantum Systems, moves from experimental research into real-world computational workflows. Unlike classical software engineering, QSE must accommodate qubit decoherence, quantum gate errors, and probabilistic computation, which demand new paradigms for algorithm design, code optimization, and debugging. IBM Quantum's ecosystem-anchored by Qiskit, the open-source SDK-has become central to developing, simulating, and benchmarking quantum algorithms that can address complex optimization, cryptography, chemistry, and machine learning problems. This paper explores the engineering methodologies, toolchains, and design considerations essential for developing scalable quantum algorithms tailored for IBM Quantum Systems. It discusses the adaptation of classical software engineering principles—such as modularity, abstraction, and version control—to hybrid quantum-classical workflows. Furthermore, it examines lifecycle management practices for quantum applications, including algorithm validation, hardware-aware compilation, quantum circuit optimization, and noise mitigation techniques. By focusing on practical examples in quantum algorithm development (e.g., Variational Quantum Eigensolver, Grover’s Search, and Quantum Approximate Optimization Algorithm), the paper demonstrates how QSE ensures reproducibility, maintainability, and scalability in quantum programming projects. The study also highlights IBM’s contributions to standardizing QSE practices through the Qiskit Runtime environment, circuit transpilation strategies, and integration with cloud-based orchestration systems. It emphasizes the need for cross-disciplinary expertise bridging software engineering, physics, and computer science to achieve efficient quantum solutions. In doing so, it outlines emerging research directions in quantum software verification, quantum DevOps pipelines, and AI-assisted quantum algorithm design. The paper concludes that as quantum computing continues its evolution toward commercial viability, Quantum Software Engineering will serve as the backbone for developing robust, hardware-optimized, and error-resilient quantum applications within IBM’s expanding quantum infrastructure.},
+	language = {en},
+	urldate = {2026-02-05},
+	publisher = {Social Science Research Network},
+	author = {Khan, Jahangir},
+	month = nov,
+	year = {2025},
+	keywords = {IBM Q Experience, IBM Quantum Systems, Noise Mitigation, Qiskit, Quantum Algorithm Design, Quantum Algorithms, Quantum Approximate Optimization Algorithm (QAOA), Quantum Circuit Optimization, Quantum Computing, Quantum DevOps, Quantum Lifecycle Management, Quantum Programming Frameworks, Quantum Software Engineering, Quantum-Classical Hybrid Computing, Variational Quantum Eigensolver (VQE)},
+}
+
+@inproceedings{younis_progress_2024,
+	title = {Progress and {Challenges} in {Quantum} {Computing} {Algorithms} for {NP}-{Hard} {Problems}},
+	issn = {2305-7254},
+	url = {https://ieeexplore.ieee.org/document/10749878/},
+	doi = {10.23919/FRUCT64283.2024.10749878},
+	abstract = {Background: Traditional computers can be inadequate to solve computationally complex problems, generally known as NP-hard problems, for example, optimization, cryptography, and network design. Quantum Computing is referred to as a breakthrough paradigm, that exploits the principles of quantum physics for performing computation in an exceedingly efficient manner.Objective: This study aims to explore the abilities of quantum algorithms in capturing NP-hard problems and discuss their strengths and limitations. The article illustrates how algorithms like Grover's and Shor's may offer exponential or polynomial improvements under specific circumstances.Methodology: The study provides a thorough survey of present-day quantum algorithms and analyzes their capabilities as well as limitations. This article examines advancements in hardware innovation and error correction methods to assess their ability to address the challenges of limited scalability and elevated error rates currently hindering their adoption.Results: The article underscores the profound impact of quantum computing on NP-hard problems. However, significant barriers remain, such as the inherent limitations of hardware, universality with respect to programming language and robust error correction capabilities.Conclusion: The article shows important progress and open problems for solving NP-hard problems using quantum algorithms. The results reveal the capabilities to achieve significant computational speedup with algorithms such as Grover’s and Shor's especially in concert when current quantum hardware matures along with novel error correction techniques. Nevertheless, scholars have to investigate more about scalability and the creation of standard programming languages for quantum computers.},
+	urldate = {2026-02-05},
+	booktitle = {2024 36th {Conference} of {Open} {Innovations} {Association} ({FRUCT})},
+	author = {Younis, Marwa Mahmood and Salim Jamil, Abeer and Abdulrazzaq, Ahmed Hamid and Ahmed Mawla, Noura and Khudhair, Rashid Merzah and Vasiliu, Yevhen},
+	month = oct,
+	year = {2024},
+	note = {ISSN: 2305-7254},
+	keywords = {Quantum computing, Quantum algorithm, Hardware, Error analysis, Qubit, Computers, Quantum Algorithms, Quantum Computing, Classification algorithms, Computational Complexity, Error correction, Error Correction, Grover's Algorithm, NP-hard problem, NP-Hard Problems, Optimization Problems, Quantum Hardware, Quantum Speedup, Scalability, Shor's Algorithm},
+	pages = {460--468},
+}
+
+@inproceedings{senapati_pqml_2024,
+	title = {{PQML}: {Enabling} the {Predictive} {Reproducibility} on {NISQ} {Machines} for {Quantum} {ML} {Applications}},
+	volume = {01},
+	shorttitle = {{PQML}},
+	url = {https://ieeexplore.ieee.org/document/10821454/},
+	doi = {10.1109/QCE60285.2024.00168},
+	abstract = {Quantum computing represents a groundbreaking approach to high-performance computing. In recent years, quantum computers have progressed from single-qubit processors to systems boasting over 400 qubits. The presence of such a large number of qubits offers significant advantages, including enhanced computational speed—a capability beyond classical computing methods. However, the current stage of quantum computing is referred to as the noisy intermediate-scale quantum (NISQ) era. The existence of noise in this era presents challenges in testing quantum computing applications, leading to considerable variance in application results. Furthermore, the diverse noise characteristics observed across different machines exacerbate this issue, complicating the selection of the appropriate machine for application execution. In response to these challenges, we introduce our Predictive Quantum Machine Learning (PQML) tool. This tool is designed to predict outcomes when executing identical quantum machine learning applications—specifically, a critical suite of variational quantum algorithms—across various quantum computers during the NISQ era. This effort relies on data collected over a 12-month period. To the best of our knowledge, this study represents the first attempt to ensure reproducibility across quantum computers for complex circuits. Additionally, we have developed a model capable of forecasting the accuracy of quantum computers for variational quantum algorithms, with a particular emphasis on quantum machine learning as a case study.},
+	urldate = {2026-02-05},
+	booktitle = {2024 {IEEE} {International} {Conference} on {Quantum} {Computing} and {Engineering} ({QCE})},
+	author = {Senapati, Priyabrata and Chen, Samuel Yen-Chi and Fang, Bo and Athawale, Tushar M. and Li, Ang and Jiang, Weiwen and Lu, Cheng Chang and Guan, Qiang},
+	month = sep,
+	year = {2024},
+	keywords = {Quantum computing, quantum computing, Qubit, Computational modeling, Computers, Machine learning, quantum machine learning, reproducibility, Accuracy, classical machine learning, device characterization, Machine learning algorithms, Noise, Prediction algorithms, predictive modeling, quantum device noise, Reproducibility of results},
+	pages = {1413--1424},
+}
+
+@misc{moguel_quantum_2024,
+	title = {Quantum software experiments: {A} reporting and laboratory package structure guidelines},
+	shorttitle = {Quantum software experiments},
+	url = {http://arxiv.org/abs/2405.04192},
+	doi = {10.48550/arXiv.2405.04192},
+	abstract = {Background. In the realm of software engineering, there are widely accepted guidelines for reporting and creating laboratory packages. Unfortunately, the landscape differs considerably in the emerging field of quantum computing. To the best of our knowledge, no standardized guidelines exist for describing experiments or outlining the necessary structures for quantum software laboratory packages. Aims. This paper endeavors to enhance the replicability and verifiability of quantum software experiments. Method. This objective is pursued through the proposition of guidelines for reporting and the delineation of a structure for laboratory packages tailored to quantum computing experiments. Specifically, we advocate for an extension and adaption of established guidelines in experimental software engineering, integrating novel elements to address the specific requirements of quantum software engineering. Results. In validating the utility and effectiveness of the proposed guidelines, we conducted a review encompassing 11 works (5 focusing on reporting guidelines and 6 on laboratory packages). In particular, this review highlighted the absence of standardized guidelines and structure of laboratory packages for quantum software experiments. Conclusions. Our assessment revealed gaps in information and opportunities for enhancement within the evaluated papers and laboratory packages. Our proposal contributes to the advancement of quantum software engineering research, taking a fundamental step toward fostering rigorous and reliable scientific research in this emerging paradigm.},
+	urldate = {2026-02-05},
+	publisher = {arXiv},
+	author = {Moguel, Enrique and Parejo, José Antonio and Ruiz-Cortés, Antonio and Garcia-Alonso, Jose and Murillo, Juan Manuel},
+	month = may,
+	year = {2024},
+	note = {arXiv:2405.04192 [cs]},
+	keywords = {Computer Science - Software Engineering},
+}
+
+@misc{mamedaliev_framework_2026,
+	title = {A framework to evaluate the performance of {Variational} {Quantum} {Algorithms}},
+	url = {http://arxiv.org/abs/2601.18812},
+	doi = {10.48550/arXiv.2601.18812},
+	abstract = {Variational Quantum Algorithms (VQAs) are promising methods for solving combinatorial optimization problems on noisy intermediate-scale quantum (NISQ) devices. However, benchmarking VQAs is difficult due to their stochastic behavior and the lack of standardized performance criteria. This work introduces a general framework for evaluating VQAs applied to Quadratic Unconstrained Binary Optimization (QUBO) problems. The framework uses three complementary metrics: feasibility, quality, and reproducibility. It also introduces a quality diagram that visualizes trade-offs between success probability and computational resources. Reproducibility is formalized using Shannon entropy, and a decision rule is defined for selecting algorithms under resource constraints. As a demonstration, the framework is applied to several VQAs using Conditional Value at Risk (CVaR) cost functions and different shot counts on a 16-qubit QUBO instance. The results show how the framework supports systematic benchmarking and provides a foundation for adaptive algorithm selection in hybrid quantum-classical workflows.},
+	urldate = {2026-02-05},
+	publisher = {arXiv},
+	author = {Mamedaliev, Ernesto and Libov, Vladyslav and Nieto-Morales, Albert and Słowik, Oskar and Bishwas, Arit Kumar},
+	month = jan,
+	year = {2026},
+	note = {arXiv:2601.18812 [quant-ph]},
+	keywords = {Quantum Physics},
+}
+
+@misc{chernyak_classical_2026,
+	title = {Classical {Regularization} in {Variational} {Quantum} {Eigensolvers}},
+	url = {http://arxiv.org/abs/2601.16679},
+	doi = {10.48550/arXiv.2601.16679},
+	abstract = {While quantum computers are a very promising tool for the far future, in their current state of the art they remain limited both in size and quality. This has given rise to hybrid quantum-classical algorithms, where the quantum device performs only a small but vital part of the overall computation. Among these, variational quantum algorithms (VQAs), which combine a classical optimization procedure with quantum evaluation of a cost function, have emerged as particularly promising. However, barren plateaus and ill-conditioned optimization landscapes remain among the primary obstacles faced by VQAs, often leading to unstable convergence and high sensitivity to initialization. Motivated by this challenge, we investigate whether a purely classical remedy, standard L2 squared-norm regularization, can systematically stabilize hybrid quantum-classical optimization. Specifically, we augment the Variational Quantum Eigensolver (VQE) objective with a quadratic penalty proportional to the squared norm of the parameters, without modifying the quantum circuit or measurement process. Across all tested Hamiltonians, H2, LiH, and the Random Field Ising Model (RFIM), we observe improved performance over a broad window of the regularization strength. Our large-scale numerical results demonstrate that classical regularization provides a robust, system-independent mechanism for mitigating VQE instability, enhancing the reliability and reproducibility of variational quantum optimization without altering the underlying quantum circuit.},
+	urldate = {2026-02-05},
+	publisher = {arXiv},
+	author = {Chernyak, Yury and Mohammad, Ijaz Ahamed and Plesch, Martin},
+	month = jan,
+	year = {2026},
+	note = {arXiv:2601.16679 [quant-ph]},
+	keywords = {Quantum Physics},
+}
+
+@misc{etim_fault_2025,
+	title = {Fault {Injection} {Attacks} on {Machine} {Learning}-based {Quantum} {Computer} {Readout} {Error} {Correction}},
+	url = {http://arxiv.org/abs/2512.20077},
+	doi = {10.48550/arXiv.2512.20077},
+	abstract = {Machine-learning (ML) classifiers are increasingly used in quantum computing systems to improve multi-qubit readout discrimination and to mitigate correlated readout errors. These ML classifiers are an integral component of today's quantum computer's control and readout stacks. This paper is the first to analyze the susceptibility of such ML classifiers to physical fault-injection which can result in generation of incorrect readout results from quantum computers. The study targets 5-qubit (thus 32-class) readout error-correction model. Using the ChipWhisperer Husky for physical voltage glitching, this work leverages an automated algorithm for scanning the fault injection parameter search space to find various successful faults in all the layers of the target ML model. Across repeated trials, this work finds that fault susceptibility is strongly layer-dependent: early-layers demonstrate higher rates of misprediction when faults are triggered in them, whereas later layers have smaller misprediction rates. This work further characterizes the resulting readout failures at the bitstring level using Hamming-distance and per-bit flip statistics, showing that single-shot glitches can induce structured readout corruption rather than purely random noise. These results motivate treating ML-based quantum computer readout and readout correction as a security-critical component of quantum systems and highlight the need for lightweight, deployment-friendly fault detection and redundancy mechanisms in the quantum computer readout pipelines.},
+	urldate = {2026-02-05},
+	publisher = {arXiv},
+	author = {Etim, Anthony and Szefer, Jakub},
+	month = dec,
+	year = {2025},
+	note = {arXiv:2512.20077 [quant-ph]},
+	keywords = {Quantum Physics, Computer Science - Cryptography and Security},
+}
+
+@misc{english_ising_2025,
+	title = {Ising on the donut: {Regimes} of topological quantum error correction from statistical mechanics},
+	shorttitle = {Ising on the donut},
+	url = {http://arxiv.org/abs/2512.10399},
+	doi = {10.48550/arXiv.2512.10399},
+	abstract = {Utility-scale quantum computers require quantum error correcting codes with large numbers of physical qubits to achieve sufficiently low logical error rates. The performance of quantum error correction (QEC) is generally predicted through large-scale numerical simulations, used to estimate thresholds, finite-size scaling, and exponential suppression of logical errors below threshold. The connection of QEC to models from statistical mechanics provides an alternative tool for analysing QEC performance. However, predicting the behaviour of these models also requires large-scale numerical simulations, as analytic solutions are not generally known. Here we exploit an exact mapping, from a toric code under bit-flip noise that is post-selected on being syndrome free to the exactly-solvable two-dimensional Ising model on a torus, to derive an analytic solution for the logical failure rate across its full domain of physical error rates. In particular, this mapping provides closed-form expressions for the logical failure rate in four distinct regimes: the path-counting, below-threshold (ordered), near-threshold (critical), and above-threshold (disordered) regimes. Our framework places a number of familiar and long-standing numerical observations on firm theoretical ground. It also motivates explicit ansätze for the conventional QEC setting of non-post-selected codes whose statistical mechanics mappings involve random-bond disorder. Specifically, we introduce an effective surface tension model for the below-threshold regime, and a new scaling ansatz for the near-threshold regime, derived from an analysis of the ground state energy cost distribution. By bridging statistical mechanics theory and quantum error correction practice, our results offer a new toolkit for designing, benchmarking, and understanding topological codes beyond current computational limits.},
+	urldate = {2026-02-05},
+	publisher = {arXiv},
+	author = {English, Lucas H. and Roberts, Sam and Bartlett, Stephen D. and Doherty, Andrew C. and Williamson, Dominic J.},
+	month = dec,
+	year = {2025},
+	note = {arXiv:2512.10399 [quant-ph]},
+	keywords = {Quantum Physics},
+}
+
+@article{bharti_noisy_2022,
+	title = {Noisy intermediate-scale quantum algorithms},
+	volume = {94},
+	doi = {10.1103/RevModPhys.94.015004},
+	number = {1},
+	journal = {Reviews of Modern Physics},
+	author = {Bharti, Kishor},
+	year = {2022},
+}
+
+@article{quek_exponentially_2024,
+	title = {Exponentially tighter bounds on limitations of quantum error mitigation},
+	volume = {20},
+	copyright = {2024 The Author(s)},
+	issn = {1745-2481},
+	url = {https://www.nature.com/articles/s41567-024-02536-7},
+	doi = {10.1038/s41567-024-02536-7},
+	abstract = {Quantum error mitigation has been proposed as a means to combat unwanted and unavoidable errors in near-term quantum computing without the heavy resource overheads required by fault-tolerant schemes. Recently, error mitigation has been successfully applied to reduce noise in near-term applications. In this work, however, we identify strong limitations to the degree to which quantum noise can be effectively ‘undone’ for larger system sizes. Our framework rigorously captures large classes of error-mitigation schemes in use today. By relating error mitigation to a statistical inference problem, we show that even at shallow circuit depths comparable to those of current experiments, a superpolynomial number of samples is needed in the worst case to estimate the expectation values of noiseless observables, the principal task of error mitigation. Notably, our construction implies that scrambling due to noise can kick in at exponentially smaller depths than previously thought. Noise also impacts other near-term applications by constraining kernel estimation in quantum machine learning, causing an earlier emergence of noise-induced barren plateaus in variational quantum algorithms and ruling out exponential quantum speed-ups in estimating expectation values in the presence of noise or preparing the ground state of a Hamiltonian.},
+	language = {en},
+	number = {10},
+	urldate = {2026-02-06},
+	journal = {Nature Physics},
+	publisher = {Nature Publishing Group},
+	author = {Quek, Yihui and Stilck França, Daniel and Khatri, Sumeet and Meyer, Johannes Jakob and Eisert, Jens},
+	month = oct,
+	year = {2024},
+	keywords = {Quantum information, Computational science, Information theory and computation, Qubits},
+	pages = {1648--1658},
+}
+
+@article{cirstoiu_volumetric_2023,
+	title = {Volumetric {Benchmarking} of {Error} {Mitigation} with {Qermit}},
+	volume = {7},
+	issn = {2521-327X},
+	url = {http://arxiv.org/abs/2204.09725},
+	doi = {10.22331/q-2023-07-13-1059},
+	abstract = {The detrimental effect of noise accumulates as quantum computers grow in size. In the case where devices are too small or noisy to perform error correction, error mitigation may be used. Error mitigation does not increase the fidelity of quantum states, but instead aims to reduce the approximation error in quantities of concern, such as expectation values of observables. However, it is as yet unclear which circuit types, and devices of which characteristics, benefit most from the use of error mitigation. Here we develop a methodology to assess the performance of quantum error mitigation techniques. Our benchmarks are volumetric in design, and are performed on different superconducting hardware devices. Extensive classical simulations are also used for comparison. We use these benchmarks to identify disconnects between the predicted and practical performance of error mitigation protocols, and to identify the situations in which their use is beneficial. To perform these experiments, and for the benefit of the wider community, we introduce Qermit - an open source python package for quantum error mitigation. Qermit supports a wide range of error mitigation methods, is easily extensible and has a modular graph-based software design that facilitates composition of error mitigation protocols and subroutines.},
+	language = {en},
+	urldate = {2026-02-06},
+	journal = {Quantum},
+	author = {Cirstoiu, Cristina and Dilkes, Silas and Mills, Daniel and Sivarajah, Seyon and Duncan, Ross},
+	month = jul,
+	year = {2023},
+	note = {arXiv:2204.09725 [quant-ph]},
+	keywords = {Quantum Physics},
+	pages = {1059},
+}
+
+@article{van_den_berg_probabilistic_2023,
+	title = {Probabilistic error cancellation with sparse {Pauli}–{Lindblad} models on noisy quantum processors},
+	volume = {19},
+	copyright = {2023 The Author(s), under exclusive licence to Springer Nature Limited},
+	issn = {1745-2481},
+	url = {https://www.nature.com/articles/s41567-023-02042-2},
+	doi = {10.1038/s41567-023-02042-2},
+	abstract = {Noise in quantum computers can result in biased estimates of physical observables. Accurate bias-free estimates can be obtained using probabilistic error cancellation, an error-mitigation technique that effectively inverts well-characterized noise channels. Learning correlated noise channels in large quantum circuits, however, has been a major challenge and has severely hampered experimental realizations. Our work presents a practical protocol for learning and inverting a sparse noise model that is able to capture correlated noise and scales to large quantum devices. These advances allow us to demonstrate probabilistic error cancellation on a superconducting quantum processor, thereby providing a way to measure noise-free observables at larger circuit volumes.},
+	language = {en},
+	number = {8},
+	urldate = {2026-02-09},
+	journal = {Nature Physics},
+	publisher = {Nature Publishing Group},
+	author = {van den Berg, Ewout and Minev, Zlatko K. and Kandala, Abhinav and Temme, Kristan},
+	month = aug,
+	year = {2023},
+	keywords = {Quantum information, Quantum physics},
+	pages = {1116--1121},
+}
+
+@article{czarnik_error_2021,
+	title = {Error mitigation with {Clifford} quantum-circuit data},
+	volume = {5},
+	issn = {2521-327X},
+	url = {http://arxiv.org/abs/2005.10189},
+	doi = {10.22331/q-2021-11-26-592},
+	abstract = {Achieving near-term quantum advantage will require accurate estimation of quantum observables despite significant hardware noise. For this purpose, we propose a novel, scalable error-mitigation method that applies to gate-based quantum computers. The method generates training data \${\textbackslash}\{X\_i{\textasciicircum}\{{\textbackslash}text\{noisy\}\},X\_i{\textasciicircum}\{{\textbackslash}text\{exact\}\}{\textbackslash}\}\$ via quantum circuits composed largely of Clifford gates, which can be efficiently simulated classically, where \$X\_i{\textasciicircum}\{{\textbackslash}text\{noisy\}\}\$ and \$X\_i{\textasciicircum}\{{\textbackslash}text\{exact\}\}\$ are noisy and noiseless observables respectively. Fitting a linear ansatz to this data then allows for the prediction of noise-free observables for arbitrary circuits. We analyze the performance of our method versus the number of qubits, circuit depth, and number of non-Clifford gates. We obtain an order-of-magnitude error reduction for a ground-state energy problem on 16 qubits in an IBMQ quantum computer and on a 64-qubit noisy simulator.},
+	urldate = {2026-02-11},
+	journal = {Quantum},
+	author = {Czarnik, Piotr and Arrasmith, Andrew and Coles, Patrick J. and Cincio, Lukasz},
+	month = nov,
+	year = {2021},
+	note = {arXiv:2005.10189 [quant-ph]},
+	keywords = {Quantum Physics},
+	pages = {592},
+}
+
+@article{acharya_quantum_2025,
+	title = {Quantum error correction below the surface code threshold},
+	volume = {638},
+	copyright = {2024 The Author(s)},
+	issn = {1476-4687},
+	url = {https://www.nature.com/articles/s41586-024-08449-y},
+	doi = {10.1038/s41586-024-08449-y},
+	abstract = {Quantum error correction1–4 provides a path to reach practical quantum computing by combining multiple physical qubits into a logical qubit, in which the logical error rate is suppressed exponentially as more qubits are added. However, this exponential suppression only occurs if the physical error rate is below a critical threshold. Here we present two below-threshold surface code memories on our newest generation of superconducting processors, Willow: a distance-7 code and a distance-5 code integrated with a real-time decoder. The logical error rate of our larger quantum memory is suppressed by a factor of Λ = 2.14 ± 0.02 when increasing the code distance by 2, culminating in a 101-qubit distance-7 code with 0.143\% ± 0.003 per cent error per cycle of error correction. This logical memory is also beyond breakeven, exceeding the lifetime of its best physical qubit by a factor of 2.4 ± 0.3. Our system maintains below-threshold performance when decoding in real time, achieving an average decoder latency of 63 microseconds at distance 5 up to a million cycles, with a cycle time of 1.1 microseconds. We also run repetition codes up to distance 29 and find that logical performance is limited by rare correlated error events, occurring approximately once every hour or 3 × 109 cycles. Our results indicate device performance that, if scaled, could realize the operational requirements of large-scale fault-tolerant quantum algorithms.},
+	language = {en},
+	number = {8052},
+	urldate = {2026-02-11},
+	journal = {Nature},
+	publisher = {Nature Publishing Group},
+	author = {Acharya, Rajeev and Abanin, Dmitry A. and Aghababaie-Beni, Laleh and Aleiner, Igor and Andersen, Trond I. and Ansmann, Markus and Arute, Frank and Arya, Kunal and Asfaw, Abraham and Astrakhantsev, Nikita and Atalaya, Juan and Babbush, Ryan and Bacon, Dave and Ballard, Brian and Bardin, Joseph C. and Bausch, Johannes and Bengtsson, Andreas and Bilmes, Alexander and Blackwell, Sam and Boixo, Sergio and Bortoli, Gina and Bourassa, Alexandre and Bovaird, Jenna and Brill, Leon and Broughton, Michael and Browne, David A. and Buchea, Brett and Buckley, Bob B. and Buell, David A. and Burger, Tim and Burkett, Brian and Bushnell, Nicholas and Cabrera, Anthony and Campero, Juan and Chang, Hung-Shen and Chen, Yu and Chen, Zijun and Chiaro, Ben and Chik, Desmond and Chou, Charina and Claes, Jahan and Cleland, Agnetta Y. and Cogan, Josh and Collins, Roberto and Conner, Paul and Courtney, William and Crook, Alexander L. and Curtin, Ben and Das, Sayan and Davies, Alex and De Lorenzo, Laura and Debroy, Dripto M. and Demura, Sean and Devoret, Michel and Di Paolo, Agustin and Donohoe, Paul and Drozdov, Ilya and Dunsworth, Andrew and Earle, Clint and Edlich, Thomas and Eickbusch, Alec and Elbag, Aviv Moshe and Elzouka, Mahmoud and Erickson, Catherine and Faoro, Lara and Farhi, Edward and Ferreira, Vinicius S. and Burgos, Leslie Flores and Forati, Ebrahim and Fowler, Austin G. and Foxen, Brooks and Ganjam, Suhas and Garcia, Gonzalo and Gasca, Robert and Genois, Élie and Giang, William and Gidney, Craig and Gilboa, Dar and Gosula, Raja and Dau, Alejandro Grajales and Graumann, Dietrich and Greene, Alex and Gross, Jonathan A. and Habegger, Steve and Hall, John and Hamilton, Michael C. and Hansen, Monica and Harrigan, Matthew P. and Harrington, Sean D. and Heras, Francisco J. H. and Heslin, Stephen and Heu, Paula and Higgott, Oscar and Hill, Gordon and Hilton, Jeremy and Holland, George and Hong, Sabrina and Huang, Hsin-Yuan and Huff, Ashley and Huggins, William J. and Ioffe, Lev B. and Isakov, Sergei V. and Iveland, Justin and Jeffrey, Evan and Jiang, Zhang and Jones, Cody and Jordan, Stephen and Joshi, Chaitali and Juhas, Pavol and Kafri, Dvir and Kang, Hui and Karamlou, Amir H. and Kechedzhi, Kostyantyn and Kelly, Julian and Khaire, Trupti and Khattar, Tanuj and Khezri, Mostafa and Kim, Seon and Klimov, Paul V. and Klots, Andrey R. and Kobrin, Bryce and Kohli, Pushmeet and Korotkov, Alexander N. and Kostritsa, Fedor and Kothari, Robin and Kozlovskii, Borislav and Kreikebaum, John Mark and Kurilovich, Vladislav D. and Lacroix, Nathan and Landhuis, David and Lange-Dei, Tiano and Langley, Brandon W. and Laptev, Pavel and Lau, Kim-Ming and Le Guevel, Loïck and Ledford, Justin and Lee, Joonho and Lee, Kenny and Lensky, Yuri D. and Leon, Shannon and Lester, Brian J. and Li, Wing Yan and Li, Yin and Lill, Alexander T. and Liu, Wayne and Livingston, William P. and Locharla, Aditya and Lucero, Erik and Lundahl, Daniel and Lunt, Aaron and Madhuk, Sid and Malone, Fionn D. and Maloney, Ashley and Mandrà, Salvatore and Manyika, James and Martin, Leigh S. and Martin, Orion and Martin, Steven and Maxfield, Cameron and McClean, Jarrod R. and McEwen, Matt and Meeks, Seneca and Megrant, Anthony and Mi, Xiao and Miao, Kevin C. and Mieszala, Amanda and Molavi, Reza and Molina, Sebastian and Montazeri, Shirin and Morvan, Alexis and Movassagh, Ramis and Mruczkiewicz, Wojciech and Naaman, Ofer and Neeley, Matthew and Neill, Charles and Nersisyan, Ani and Neven, Hartmut and Newman, Michael and Ng, Jiun How and Nguyen, Anthony and Nguyen, Murray and Ni, Chia-Hung and Niu, Murphy Yuezhen and O’Brien, Thomas E. and Oliver, William D. and Opremcak, Alex and Ottosson, Kristoffer and Petukhov, Andre and Pizzuto, Alex and Platt, John and Potter, Rebecca and Pritchard, Orion and Pryadko, Leonid P. and Quintana, Chris and Ramachandran, Ganesh and Reagor, Matthew J. and Redding, John and Rhodes, David M. and Roberts, Gabrielle and Rosenberg, Eliott and Rosenfeld, Emma and Roushan, Pedram and Rubin, Nicholas C. and Saei, Negar and Sank, Daniel and Sankaragomathi, Kannan and Satzinger, Kevin J. and Schurkus, Henry F. and Schuster, Christopher and Senior, Andrew W. and Shearn, Michael J. and Shorter, Aaron and Shutty, Noah and Shvarts, Vladimir and Singh, Shraddha and Sivak, Volodymyr and Skruzny, Jindra and Small, Spencer and Smelyanskiy, Vadim and Smith, W. Clarke and Somma, Rolando D. and Springer, Sofia and Sterling, George and Strain, Doug and Suchard, Jordan and Szasz, Aaron and Sztein, Alex and Thor, Douglas and Torres, Alfredo and Torunbalci, M. Mert and Vaishnav, Abeer and Vargas, Justin and Vdovichev, Sergey and Vidal, Guifre and Villalonga, Benjamin and Heidweiller, Catherine Vollgraff and Waltman, Steven and Wang, Shannon X. and Ware, Brayden and Weber, Kate and Weidel, Travis and White, Theodore and Wong, Kristi and Woo, Bryan W. K. and Xing, Cheng and Yao, Z. Jamie and Yeh, Ping and Ying, Bicheng and Yoo, Juhwan and Yosri, Noureldin and Young, Grayson and Zalcman, Adam and Zhang, Yaxing and Zhu, Ningfeng and Zobrist, Nicholas and {Google Quantum AI and Collaborators}},
+	month = feb,
+	year = {2025},
+	keywords = {Computer science, Quantum information},
+	pages = {920--926},
+}
+
+@misc{abughanem_google_2024,
+	title = {Google {Quantum} {AI}'s {Quest} for {Error}-{Corrected} {Quantum} {Computers}},
+	url = {http://arxiv.org/abs/2410.00917},
+	doi = {10.48550/arXiv.2410.00917},
+	abstract = {Quantum computers stand at the forefront of technological innovation, offering exponential computational speed-ups that challenge classical computing capabilities. At the cutting edge of this transformation is Google Quantum AI, a leader in driving forward the development of practical quantum computers. This article provides a comprehensive review of Google Quantum AI's pivotal role in the quantum computing landscape over the past decade, emphasizing their significant strides towards achieving quantum computational supremacy. By exploring their advancements and contributions in quantum hardware, quantum software, error correction, and quantum algorithms, this study highlights the transformative impact of Google Quantum AI's initiatives in shaping the future of quantum computing technology.},
+	urldate = {2026-02-11},
+	publisher = {arXiv},
+	author = {AbuGhanem, M.},
+	month = sep,
+	year = {2024},
+	note = {arXiv:2410.00917 [quant-ph]
+version: 1},
+	keywords = {Quantum Physics, Computer Science - Hardware Architecture},
+}
+
+@article{kim_evidence_2023,
+	title = {Evidence for the utility of quantum computing before fault tolerance},
+	volume = {618},
+	copyright = {2023 The Author(s)},
+	issn = {1476-4687},
+	url = {https://www.nature.com/articles/s41586-023-06096-3},
+	doi = {10.1038/s41586-023-06096-3},
+	abstract = {Quantum computing promises to offer substantial speed-ups over its classical counterpart for certain problems. However, the greatest impediment to realizing its full potential is noise that is inherent to these systems. The widely accepted solution to this challenge is the implementation of fault-tolerant quantum circuits, which is out of reach for current processors. Here we report experiments on a noisy 127-qubit processor and demonstrate the measurement of accurate expectation values for circuit volumes at a scale beyond brute-force classical computation. We argue that this represents evidence for the utility of quantum computing in a pre-fault-tolerant era. These experimental results are enabled by advances in the coherence and calibration of a superconducting processor at this scale and the ability to characterize1 and controllably manipulate noise across such a large device. We establish the accuracy of the measured expectation values by comparing them with the output of exactly verifiable circuits. In the regime of strong entanglement, the quantum computer provides correct results for which leading classical approximations such as pure-state-based 1D (matrix product states, MPS) and 2D (isometric tensor network states, isoTNS) tensor network methods2,3 break down. These experiments demonstrate a foundational tool for the realization of near-term quantum applications4,5.},
+	language = {en},
+	number = {7965},
+	urldate = {2026-02-11},
+	journal = {Nature},
+	publisher = {Nature Publishing Group},
+	author = {Kim, Youngseok and Eddins, Andrew and Anand, Sajant and Wei, Ken Xuan and van den Berg, Ewout and Rosenblatt, Sami and Nayfeh, Hasan and Wu, Yantao and Zaletel, Michael and Temme, Kristan and Kandala, Abhinav},
+	month = jun,
+	year = {2023},
+	keywords = {Quantum information, Quantum simulation, Information technology},
+	pages = {500--505},
+}
+
+@article{larose_mitiq_2022,
+	title = {Mitiq: {A} software package for error mitigation on noisy quantum computers},
+	volume = {6},
+	issn = {2521-327X},
+	shorttitle = {Mitiq},
+	url = {http://arxiv.org/abs/2009.04417},
+	doi = {10.22331/q-2022-08-11-774},
+	abstract = {We introduce Mitiq, a Python package for error mitigation on noisy quantum computers. Error mitigation techniques can reduce the impact of noise on near-term quantum computers with minimal overhead in quantum resources by relying on a mixture of quantum sampling and classical post-processing techniques. Mitiq is an extensible toolkit of different error mitigation methods, including zero-noise extrapolation, probabilistic error cancellation, and Clifford data regression. The library is designed to be compatible with generic backends and interfaces with different quantum software frameworks. We describe Mitiq using code snippets to demonstrate usage and discuss features and contribution guidelines. We present several examples demonstrating error mitigation on IBM and Rigetti superconducting quantum processors as well as on noisy simulators.},
+	language = {en},
+	urldate = {2026-02-11},
+	journal = {Quantum},
+	author = {LaRose, Ryan and Mari, Andrea and Kaiser, Sarah and Karalekas, Peter J. and Alves, Andre A. and Czarnik, Piotr and Mandouh, Mohamed El and Gordon, Max H. and Hindy, Yousef and Robertson, Aaron and Thakre, Purva and Wahl, Misty and Samuel, Danny and Mistri, Rahul and Tremblay, Maxime and Gardner, Nick and Stemen, Nathaniel T. and Shammah, Nathan and Zeng, William J.},
+	month = aug,
+	year = {2022},
+	note = {arXiv:2009.04417 [quant-ph]},
+	keywords = {Quantum Physics, Computer Science - Emerging Technologies},
+	pages = {774},
+}
+
+@misc{roy_simulating_2024,
+	title = {Simulating open quantum systems using noise models and {NISQ} devices with error mitigation},
+	url = {http://arxiv.org/abs/2401.06535},
+	doi = {10.48550/arXiv.2401.06535},
+	abstract = {In this work, we present simulations of two Open Quantum System models, Collisional and Markovian Reservoir, with noise simulations, the IBM devices (\${\textbackslash}textit\{ibm\_kyoto\}\$, \${\textbackslash}textit\{ibm\_osaka\}\$) and the OQC device Lucy. Extending the results of García-Pérez, et al. [npj Quantum Information 6.1 (2020): 1]. Using the Mitiq toolkit, we apply Zero-Noise extrapolation (ZNE), an error mitigation technique, and analyze their deviation from the theoretical results for the models under study. For both models, by applying ZNE, we were able to reduce the error and overlap it with the theoretical results. All our simulations and experiments were done in the qBraid environment.},
+	urldate = {2026-02-11},
+	publisher = {arXiv},
+	author = {Roy, Mainak and Britto, Jessica John and Hill, Ryan and Onofre, Victor},
+	month = jan,
+	year = {2024},
+	note = {arXiv:2401.06535 [quant-ph]},
+	keywords = {Quantum Physics},
+}
+
+@inproceedings{shi_error-mitigated_2023,
+	title = {Error-{Mitigated} {Quantum} {Routing} on {Noisy} {Devices}},
+	issn = {2576-6813},
+	url = {https://ieeexplore.ieee.org/document/10437807/},
+	doi = {10.1109/GLOBECOM54140.2023.10437807},
+	abstract = {With sub-threshold quantum error correction on quantum hardware still out of reach, quantum error mitigation methods are currently deemed an attractive option for implementing certain applications on near-term noisy quantum devices. One such application is quantum routing - the ability to map an incoming quantum signal into a superposition of paths. In this work, we use a 7-qubit IBM quantum device to experimentally deploy two promising quantum error mitigation methods, Zero-Noise Extrapolation (ZNE) and Probabilistic Error Cancellation (PEC), in the context of quantum routing. Importantly, beyond investigating the improved performance of quantum routing via ZNE and PEC separately, we also investigate the routing performance provided by the concatenation of these two error-mitigation methods. Our experimental results demonstrate that such concatenation leads a very significant performance improvement relative to implementation with no error mitigation. Indeed, an almost perfect performance in terms of fidelity of the output entangled paths is found. These new results reveal that with concatenated quantum error-mitigation embedded, useful quantum routing becomes feasible on current devices without the need for quantum error correction - opening up a potential implementation pathway to other applications that utilize a superposition of communication links.},
+	urldate = {2026-02-11},
+	booktitle = {{GLOBECOM} 2023 - 2023 {IEEE} {Global} {Communications} {Conference}},
+	author = {Shi, Wenbo and Malaney, Robert},
+	month = dec,
+	year = {2023},
+	note = {ISSN: 2576-6813},
+	keywords = {Noise measurement, Performance evaluation, Error correction, Quantum entanglement, Routing, Routing protocols, Scholarships},
+	pages = {5475--5480},
+}
+
+@inproceedings{venere_characterizing_2024,
+	title = {Characterizing the {Effects} of {Zero}-{Noise} {Extrapolation} on a {QAOA} {Workflow}},
+	volume = {02},
+	url = {https://ieeexplore.ieee.org/document/10821216/},
+	doi = {10.1109/QCE60285.2024.10338},
+	abstract = {The effects of noise on NISQ devices strongly limit the current applicability of quantum combinatorial optimization algorithms. In this work, we integrate ZNE, an error mitigation technique, into the QAOA, thus adding further reliability to the method. We also perform a benchmark to assess the effects of mitigation on the exploration of the parameters space performed by the optimizer.},
+	urldate = {2026-02-11},
+	booktitle = {2024 {IEEE} {International} {Conference} on {Quantum} {Computing} and {Engineering} ({QCE})},
+	author = {Venere, Marco and Lusso, Adriano and Onofre, Victor and Maldonado-Romo, Alberto and Santambrogio, Marco D.},
+	month = sep,
+	year = {2024},
+	keywords = {Optimization, Quantum computing, Extrapolation, quantum error mitigation, zero-noise extrapolation, Benchmark testing, Computational modeling, Performance evaluation, Noise, Approximation algorithms, Prevention and mitigation, quantum approximate optimization algorithm, Reliability},
+	pages = {426--427},
+}
+
+@misc{sahu_nac-qfl_2024,
+	title = {{NAC}-{QFL}: {Noise} {Aware} {Clustered} {Quantum} {Federated} {Learning}},
+	shorttitle = {{NAC}-{QFL}},
+	url = {http://arxiv.org/abs/2406.14236},
+	doi = {10.48550/arXiv.2406.14236},
+	abstract = {Recent advancements in quantum computing, alongside successful deployments of quantum communication, hold promises for revolutionizing mobile networks. While Quantum Machine Learning (QML) presents opportunities, it contends with challenges like noise in quantum devices and scalability. Furthermore, the high cost of quantum communication constrains the practical application of QML in real-world scenarios. This paper introduces a noise-aware clustered quantum federated learning system that addresses noise mitigation, limited quantum device capacity, and high quantum communication costs in distributed QML. It employs noise modelling and clustering to select devices with minimal noise and distribute QML tasks efficiently. Using circuit partitioning to deploy smaller models on low-noise devices and aggregating similar devices, the system enhances distributed QML performance and reduces communication costs. Leveraging circuit cutting, QML techniques are more effective for smaller circuit sizes and fidelity. We conduct experimental evaluations to assess the performance of the proposed system. Additionally, we introduce a noisy dataset for QML to demonstrate the impact of noise on proposed accuracy.},
+	urldate = {2026-02-11},
+	publisher = {arXiv},
+	author = {Sahu, Himanshu and Gupta, Hari Prabhat},
+	month = jun,
+	year = {2024},
+	note = {arXiv:2406.14236 [quant-ph]},
+	keywords = {Quantum Physics, Computer Science - Distributed, Parallel, and Cluster Computing},
+}
+
+@article{franca_game_2022,
+	title = {A game of quantum advantage: linking verification and simulation},
+	volume = {6},
+	shorttitle = {A game of quantum advantage},
+	url = {https://quantum-journal.org/papers/q-2022-06-30-753/},
+	doi = {10.22331/q-2022-06-30-753},
+	abstract = {Daniel Stilck França and Raul Garcia-Patron,
+Quantum 6, 753 (2022).
+We present a formalism that captures the process of proving quantum superiority to skeptics as an interactive game between two agents, supervised by a referee. Bob, is sampling from a classi…},
+	language = {en-GB},
+	urldate = {2026-02-11},
+	journal = {Quantum},
+	publisher = {Verein zur Förderung des Open Access Publizierens in den Quantenwissenschaften},
+	author = {França, Daniel Stilck and Garcia-Patron, Raul},
+	month = jun,
+	year = {2022},
+	pages = {753},
+}
+
+@article{wang_noise-induced_2021,
+	title = {Noise-induced barren plateaus in variational quantum algorithms},
+	volume = {12},
+	copyright = {2021 The Author(s)},
+	issn = {2041-1723},
+	url = {https://www.nature.com/articles/s41467-021-27045-6},
+	doi = {10.1038/s41467-021-27045-6},
+	abstract = {Variational Quantum Algorithms (VQAs) may be a path to quantum advantage on Noisy Intermediate-Scale Quantum (NISQ) computers. A natural question is whether noise on NISQ devices places fundamental limitations on VQA performance. We rigorously prove a serious limitation for noisy VQAs, in that the noise causes the training landscape to have a barren plateau (i.e., vanishing gradient). Specifically, for the local Pauli noise considered, we prove that the gradient vanishes exponentially in the number of qubits n if the depth of the ansatz grows linearly with n. These noise-induced barren plateaus (NIBPs) are conceptually different from noise-free barren plateaus, which are linked to random parameter initialization. Our result is formulated for a generic ansatz that includes as special cases the Quantum Alternating Operator Ansatz and the Unitary Coupled Cluster Ansatz, among others. For the former, our numerical heuristics demonstrate the NIBP phenomenon for a realistic hardware noise model.},
+	language = {en},
+	number = {1},
+	urldate = {2026-02-11},
+	journal = {Nature Communications},
+	publisher = {Nature Publishing Group},
+	author = {Wang, Samson and Fontana, Enrico and Cerezo, M. and Sharma, Kunal and Sone, Akira and Cincio, Lukasz and Coles, Patrick J.},
+	month = nov,
+	year = {2021},
+	keywords = {Quantum information, Information theory and computation},
+	pages = {6961},
+}
+
+@article{tindall_efficient_2024,
+	title = {Efficient {Tensor} {Network} {Simulation} of {IBM}’s {Eagle} {Kicked} {Ising} {Experiment}},
+	volume = {5},
+	issn = {2691-3399},
+	url = {https://link.aps.org/doi/10.1103/PRXQuantum.5.010308},
+	doi = {10.1103/PRXQuantum.5.010308},
+	abstract = {We report an accurate and efficient classical simulation of a kicked Ising quantum system on the heavy hexagon lattice. A simulation of this system was recently performed on a 127-qubit quantum processor using noise-mitigation techniques to enhance accuracy [Y. Kim ., Nature, 618, 500–5 (2023)]. Here we show that, by adopting a tensor network approach that reflects the geometry of the lattice and is approximately contracted using belief propagation, we can perform a classical simulation that is significantly more accurate and precise than the results obtained from the quantum processor and many other classical methods. We quantify the treelike correlations of the wave function in order to explain the accuracy of our belief propagation-based approach. We also show how our method allows us to perform simulations of the system to long times in the thermodynamic limit, corresponding to a quantum computer with an infinite number of qubits. Our tensor network approach has broader applications for simulating the dynamics of quantum systems with treelike correlations.
+            
+              
+              
+                
+                  Published by the American Physical Society
+                  2024},
+	language = {en},
+	number = {1},
+	urldate = {2026-02-11},
+	journal = {PRX Quantum},
+	author = {Tindall, Joseph and Fishman, Matthew and Stoudenmire, E. Miles and Sels, Dries},
+	month = jan,
+	year = {2024},
+	pages = {010308},
+}
+
+@misc{campbell_superstaq_2023,
+	title = {Superstaq: {Deep} {Optimization} of {Quantum} {Programs}},
+	shorttitle = {Superstaq},
+	url = {http://arxiv.org/abs/2309.05157},
+	doi = {10.48550/arXiv.2309.05157},
+	abstract = {We describe Superstaq, a quantum software platform that optimizes the execution of quantum programs by tailoring to underlying hardware primitives. For benchmarks such as the Bernstein-Vazirani algorithm and the Qubit Coupled Cluster chemistry method, we find that deep optimization can improve program execution performance by at least 10x compared to prevailing state-of-the-art compilers. To highlight the versatility of our approach, we present results from several hardware platforms: superconducting qubits (AQT @ LBNL, IBM Quantum, Rigetti), trapped ions (QSCOUT), and neutral atoms (Infleqtion). Across all platforms, we demonstrate new levels of performance and new capabilities that are enabled by deeper integration between quantum programs and the device physics of hardware.},
+	urldate = {2026-02-11},
+	publisher = {arXiv},
+	author = {Campbell, Colin and Chong, Frederic T. and Dahl, Denny and Frederick, Paige and Goiporia, Palash and Gokhale, Pranav and Hall, Benjamin and Issa, Salahedeen and Jones, Eric and Lee, Stephanie and Litteken, Andrew and Omole, Victory and Owusu-Antwi, David and Perlin, Michael A. and Rines, Rich and Smith, Kaitlin N. and Goss, Noah and Hashim, Akel and Naik, Ravi and Younis, Ed and Lobser, Daniel and Yale, Christopher G. and Huang, Benchen and Liu, Ji},
+	month = sep,
+	year = {2023},
+	note = {arXiv:2309.05157 [quant-ph]},
+	keywords = {Quantum Physics},
+}
+
+@article{urbanek_mitigating_2021,
+	title = {Mitigating {Depolarizing} {Noise} on {Quantum} {Computers} with {Noise}-{Estimation} {Circuits}},
+	volume = {127},
+	url = {https://link.aps.org/doi/10.1103/PhysRevLett.127.270502},
+	doi = {10.1103/PhysRevLett.127.270502},
+	abstract = {A significant problem for current quantum computers is noise. While there are many distinct noise channels, the depolarizing noise model often appropriately describes average noise for large circuits involving many qubits and gates. We present a method to mitigate the depolarizing noise by first estimating its rate with a noise-estimation circuit and then correcting the output of the target circuit using the estimated rate. The method is experimentally validated on a simulation of the Heisenberg model. We find that our approach in combination with readout-error correction, randomized compiling, and zero-noise extrapolation produces close to exact results even for circuits containing hundreds of CNOT gates. We also show analytically that zero-noise extrapolation is improved when it is applied to the output of our method.},
+	number = {27},
+	urldate = {2026-02-11},
+	journal = {Physical Review Letters},
+	publisher = {American Physical Society},
+	author = {Urbanek, Miroslav and Nachman, Benjamin and Pascuzzi, Vincent R. and He, Andre and Bauer, Christian W. and de Jong, Wibe A.},
+	month = dec,
+	year = {2021},
+	pages = {270502},
+}
+
+@article{schultz_impact_2022,
+	title = {Impact of time-correlated noise on zero-noise extrapolation},
+	volume = {106},
+	url = {https://link.aps.org/doi/10.1103/PhysRevA.106.052406},
+	doi = {10.1103/PhysRevA.106.052406},
+	abstract = {Zero-noise extrapolation is a quantum error mitigation technique that has typically been studied under the ideal approximation that the noise acting on a quantum device is not time correlated. In this paper, we investigate the feasibility and performance of zero-noise extrapolation in the presence of time-correlated noise. We show that, in contrast to white noise, time-correlated noise is harder to mitigate via zero-noise extrapolation because it is difficult to scale the noise level without also modifying its spectral distribution. This limitation is particularly strong if “local” gate-level methods are applied for noise scaling. However, we find that “global” noise-scaling methods, e.g., global unitary folding, can be sufficiently reliable even in the presence of time-correlated noise.},
+	number = {5},
+	urldate = {2026-03-06},
+	journal = {Physical Review A},
+	publisher = {American Physical Society},
+	author = {Schultz, Kevin and LaRose, Ryan and Mari, Andrea and Quiroz, Gregory and Shammah, Nathan and Clader, B. David and Zeng, William J.},
+	month = nov,
+	year = {2022},
+	pages = {052406},
+}
+
+@misc{weidinger_error_2023,
+	title = {Error {Mitigation} for {Quantum} {Approximate} {Optimization}},
+	url = {http://arxiv.org/abs/2301.05042},
+	doi = {10.48550/arXiv.2301.05042},
+	abstract = {Solving optimization problems on near term quantum devices requires developing error mitigation techniques to cope with hardware decoherence and dephasing processes. We propose a mitigation technique based on the LHZ architecture. This architecture uses a redundant encoding of logical variables to solve optimization problems on fully programmable planar quantum chips. We discuss how this redundancy can be exploited to mitigate errors in quantum optimization algorithms. In the specific context of the quantum approximate optimization algorithm (QAOA), we show that errors can be significantly mitigated by appropriately modifying the objective cost function.},
+	urldate = {2026-03-11},
+	publisher = {arXiv},
+	author = {Weidinger, Anita and Mbeng, Glen Bigan and Lechner, Wolfgang},
+	month = jan,
+	year = {2023},
+	note = {arXiv:2301.05042 [quant-ph]},
+	keywords = {Quantum Physics},
+}
+
+@article{huang_near-term_2023,
+	title = {Near-{Term} {Quantum} {Computing} {Techniques}: {Variational} {Quantum} {Algorithms}, {Error} {Mitigation}, {Circuit} {Compilation}, {Benchmarking} and {Classical} {Simulation}},
+	volume = {66},
+	issn = {1674-7348, 1869-1927},
+	shorttitle = {Near-{Term} {Quantum} {Computing} {Techniques}},
+	url = {http://arxiv.org/abs/2211.08737},
+	doi = {10.1007/s11433-022-2057-y},
+	abstract = {Quantum computing is a game-changing technology for global academia, research centers and industries including computational science, mathematics, finance, pharmaceutical, materials science, chemistry and cryptography. Although it has seen a major boost in the last decade, we are still a long way from reaching the maturity of a full-fledged quantum computer. That said, we will be in the Noisy-Intermediate Scale Quantum (NISQ) era for a long time, working on dozens or even thousands of qubits quantum computing systems. An outstanding challenge, then, is to come up with an application that can reliably carry out a nontrivial task of interest on the near-term quantum devices with non-negligible quantum noise. To address this challenge, several near-term quantum computing techniques, including variational quantum algorithms, error mitigation, quantum circuit compilation and benchmarking protocols, have been proposed to characterize and mitigate errors, and to implement algorithms with a certain resistance to noise, so as to enhance the capabilities of near-term quantum devices and explore the boundaries of their ability to realize useful applications. Besides, the development of near-term quantum devices is inseparable from the efficient classical simulation, which plays a vital role in quantum algorithm design and verification, error-tolerant verification and other applications. This review will provide a thorough introduction of these near-term quantum computing techniques, report on their progress, and finally discuss the future prospect of these techniques, which we hope will motivate researchers to undertake additional studies in this field.},
+	number = {5},
+	urldate = {2026-03-11},
+	journal = {Science China Physics, Mechanics \& Astronomy},
+	author = {Huang, He-Liang and Xu, Xiao-Yue and Guo, Chu and Tian, Guojing and Wei, Shi-Jie and Sun, Xiaoming and Bao, Wan-Su and Long, Gui-Lu},
+	month = may,
+	year = {2023},
+	note = {arXiv:2211.08737 [quant-ph]},
+	keywords = {Quantum Physics, Computer Science - Machine Learning, Computer Science - Artificial Intelligence},
+	pages = {250302},
+}
+
+@inproceedings{patil_folding-free_2023,
+	title = {Folding-{Free} {ZNE}: {A} {Comprehensive} {Quantum} {Zero}-{Noise} {Extrapolation} {Approach} for {Mitigating} {Depolarizing} and {Decoherence} {Noise}},
+	shorttitle = {Folding-{Free} {ZNE}},
+	url = {http://arxiv.org/abs/2305.00622},
+	doi = {10.1109/QCE57702.2023.00104},
+	abstract = {Quantum computers in the NISQ era are prone to noise. A range of quantum error mitigation techniques has been proposed to address this issue. Zero-noise extrapolation (ZNE) stands out as a promising one. ZNE involves increasing the noise levels in a circuit and then using extrapolation to infer the zero noise case from the noisy results obtained. This paper presents a novel ZNE approach that does not require circuit folding or noise scaling to mitigate depolarizing and/or decoherence noise. To mitigate depolarizing noise, we propose leveraging the extreme/infinite noisy case, which allows us to avoid circuit folding. Specifically, the circuit output with extreme noise becomes the maximally mixed state. We show that using circuit-reliability metrics, simple linear extrapolation can effectively mitigate depolarizing noise. With decoherence noise, different states decay into the all-zero state at a rate that depends on the number of excited states and time. Therefore, we propose a state- and latency-aware exponential extrapolation that does not involve folding or scaling. When dealing with a quantum system affected by both decoherence and depolarizing noise, we propose to use our two mitigation techniques in sequence: first applying decoherence error mitigation, followed by depolarizing error mitigation. A common limitation of ZNE schemes is that if the circuit of interest suffers from high noise, scaling-up noise levels could not provide useful data for extrapolation. We propose using circuit-cut techniques to break a large quantum circuit into smaller sub-circuits to overcome this limitation. This way, the noise levels of the sub-circuits are lower than the original circuit, and ZNE can become more effective in mitigating their noises.},
+	urldate = {2026-03-22},
+	booktitle = {2023 {IEEE} {International} {Conference} on {Quantum} {Computing} and {Engineering} ({QCE})},
+	author = {Patil, Hrushikesh and Li, Peiyi and Liu, Ji and Zhou, Huiyang},
+	month = sep,
+	year = {2023},
+	note = {arXiv:2305.00622 [quant-ph]},
+	keywords = {Quantum Physics},
+	pages = {898--909},
+}
+
+@article{halder_development_2023,
+	title = {Development of zero-noise extrapolated projective quantum algorithm for accurate evaluation of molecular energetics in noisy quantum devices},
+	volume = {159},
+	issn = {0021-9606},
+	url = {https://doi.org/10.1063/5.0166433},
+	doi = {10.1063/5.0166433},
+	abstract = {The recently developed Projective Quantum Eigensolver (PQE) offers an elegant procedure to evaluate the ground state energies of molecular systems in quantum computers. However, the noise in available quantum hardware can result in significant errors in computed outcomes, limiting the realization of quantum advantage. Although PQE comes equipped with some degree of inherent noise resilience, any practical implementation with apposite accuracy would require additional routines to eliminate or mitigate the errors further. In this work, we propose a way to enhance the efficiency of PQE by developing an optimal framework for introducing Zero Noise Extrapolation (ZNE) in the nonlinear iterative procedure that outlines the PQE, leading to the formulation of ZNE-PQE. Moreover, we perform a detailed analysis of how various components involved in it affect the accuracy and efficiency of the reciprocated energy convergence trajectory. Additionally, we investigate the underlying mechanism that leads to the improvements observed in ZNE-PQE over conventional PQE by performing a comparative analysis of their residue norm landscape. This approach is expected to facilitate practical applications of quantum computing in fields related to molecular sciences, where it is essential to determine molecular energies accurately.},
+	number = {11},
+	urldate = {2026-03-23},
+	journal = {The Journal of Chemical Physics},
+	author = {Halder, Sonaldeep and Shrikhande, Chinmay and Maitra, Rahul},
+	month = sep,
+	year = {2023},
+	pages = {114115},
+}
+
+@article{pelofske_increasing_2024,
+	title = {Increasing the {Measured} {Effective} {Quantum} {Volume} with {Zero} {Noise} {Extrapolation}},
+	volume = {5},
+	issn = {2643-6809, 2643-6817},
+	url = {http://arxiv.org/abs/2306.15863},
+	doi = {10.1145/3680290},
+	abstract = {Quantum Volume is a full-stack benchmark for near-term quantum computers. It quantifies the largest size of a square circuit which can be executed on the target device with reasonable fidelity. Error mitigation is a set of techniques intended to remove the effects of noise present in the computation of noisy quantum computers when computing an expectation value of interest. Effective quantum volume is a proposed metric that applies error mitigation to the quantum volume protocol in order to evaluate the effectiveness not only of the target device but also of the error mitigation algorithm. Digital Zero-Noise Extrapolation (ZNE) is an error mitigation technique that estimates the noiseless expectation value using circuit folding to amplify errors by known scale factors and extrapolating to the zero-noise limit. Here we demonstrate that ZNE, with global and local unitary folding with fractional scale factors, in conjunction with dynamical decoupling, can increase the effective quantum volume over the vendor-measured quantum volume. Specifically, we measure the effective quantum volume of four IBM Quantum superconducting processor units, obtaining values that are larger than the vendor-measured quantum volume on each device. This is the first such increase reported.},
+	number = {3},
+	urldate = {2026-04-09},
+	journal = {ACM Transactions on Quantum Computing},
+	author = {Pelofske, Elijah and Russo, Vincent and LaRose, Ryan and Mari, Andrea and Strano, Dan and Bärtschi, Andreas and Eidenbenz, Stephan and Zeng, William J.},
+	month = sep,
+	year = {2024},
+	note = {arXiv:2306.15863 [quant-ph]},
+	keywords = {Computer Science - Data Structures and Algorithms, Quantum Physics},
+	pages = {1--18},
+}

@@ -1,0 +1,14 @@
+*.log
+*.aux
+*.out
+*.toc
+*.gz
+*.bbl
+!paper/qce26_claim_against_measurement.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+main.pdf
+build/
+__pycache__/
+paper/references.bib

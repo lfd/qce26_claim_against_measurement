@@ -1,0 +1,237 @@
+paper,criterion,csv_column,csv_rating,scan_candidate,direction,n_strong,n_weak
+AbuGhanem,C5,overhead,partial,yes,UPGRADE,8,10
+AbuGhanem,C6,noise_model,partial,yes,UPGRADE,4,3
+AbuGhanem,C7,reproducibility,partial,yes,UPGRADE,43,0
+AbuGhanem,C8,neg_results,no,partial,UPGRADE,0,31
+Acharya et al. (Willow),C8,neg_results,yes,partial,DOWNGRADE,0,12
+Amin et al.,C1,sample_size,partial,yes,UPGRADE,1,1
+Amin et al.,C2,variance,partial,no,DOWNGRADE,0,0
+Amin et al.,C4,drift,yes,partial,DOWNGRADE,0,2
+Amin et al.,C5,overhead,partial,no,DOWNGRADE,0,0
+Amin et al.,C6,noise_model,yes,partial,DOWNGRADE,0,1
+Amin et al.,C7,reproducibility,partial,no,DOWNGRADE,0,0
+Amin et al.,C8,neg_results,yes,partial,DOWNGRADE,0,1
+Bharti,C5,overhead,partial,yes,UPGRADE,4,11
+Bharti,C6,noise_model,partial,yes,UPGRADE,4,18
+Bultrini et al.,C3,stat_tests,partial,yes,UPGRADE,1,24
+Bultrini et al.,C7,reproducibility,partial,yes,UPGRADE,42,0
+Campbell et al.,C1,sample_size,partial,yes,UPGRADE,1,1
+Campbell et al.,C2,variance,partial,yes,UPGRADE,4,0
+Campbell et al.,C4,drift,no,partial,UPGRADE,0,4
+Campbell et al.,C5,overhead,partial,yes,UPGRADE,1,2
+Campbell et al.,C6,noise_model,partial,yes,UPGRADE,1,4
+Chernyak et al.,C5,overhead,partial,no,DOWNGRADE,0,0
+Chernyak et al.,C8,neg_results,yes,partial,DOWNGRADE,0,8
+Cirstoiu et al.,C5,overhead,yes,partial,DOWNGRADE,0,13
+Czarnik et al.,C3,stat_tests,partial,yes,UPGRADE,1,31
+Czarnik et al.,C4,drift,no,partial,UPGRADE,0,2
+Czarnik et al.,C5,overhead,yes,partial,DOWNGRADE,0,9
+Czarnik et al.,C7,reproducibility,partial,yes,UPGRADE,9,0
+Dutkiewicz et al.,C3,stat_tests,partial,yes,UPGRADE,1,18
+Dutkiewicz et al.,C8,neg_results,yes,partial,DOWNGRADE,0,15
+English et al.,C5,overhead,partial,yes,UPGRADE,2,89
+English et al.,C7,reproducibility,partial,no,DOWNGRADE,0,0
+Etim & Szefer,C2,variance,partial,no,DOWNGRADE,0,0
+Etim & Szefer,C7,reproducibility,yes,no,DOWNGRADE,0,0
+Etim & Szefer,C8,neg_results,yes,partial,DOWNGRADE,0,1
+Njoki,C7,reproducibility,no,yes,UPGRADE,12,0
+Njoki,C8,neg_results,no,partial,UPGRADE,0,26
+Filippov et al. (2023),C3,stat_tests,partial,yes,UPGRADE,3,88
+Filippov et al. (2023),C7,reproducibility,partial,yes,UPGRADE,1,1
+Filippov et al. (2023),C8,neg_results,partial,yes,UPGRADE,2,1
+Filippov et al. (2024),C4,drift,yes,partial,DOWNGRADE,0,4
+Filippov et al. (2024),C7,reproducibility,partial,yes,UPGRADE,4,0
+Franca & Garcia-Patron,C7,reproducibility,partial,yes,UPGRADE,6,1
+Franca & Garcia-Patron,C8,neg_results,yes,partial,DOWNGRADE,0,11
+Govia et al.,C1,sample_size,partial,yes,UPGRADE,2,1
+Govia et al.,C2,variance,partial,yes,UPGRADE,7,29
+Govia et al.,C4,drift,yes,partial,DOWNGRADE,0,7
+Govia et al.,C5,overhead,partial,yes,UPGRADE,1,4
+Govia et al.,C7,reproducibility,yes,no,DOWNGRADE,0,0
+Halder et al.,C1,sample_size,partial,no,DOWNGRADE,0,0
+Halder et al.,C5,overhead,yes,partial,DOWNGRADE,0,4
+Halder et al.,C7,reproducibility,partial,yes,UPGRADE,9,1
+Halder et al.,C8,neg_results,yes,partial,DOWNGRADE,0,2
+Henao et al.,C2,variance,partial,yes,UPGRADE,3,3
+Henao et al.,C4,drift,yes,partial,DOWNGRADE,0,22
+Henao et al.,C5,overhead,partial,yes,UPGRADE,2,9
+Henao et al.,C7,reproducibility,partial,yes,UPGRADE,7,0
+Hicks et al.,C1,sample_size,partial,yes,UPGRADE,2,30
+Hicks et al.,C2,variance,partial,yes,UPGRADE,15,14
+Hicks et al.,C4,drift,no,partial,UPGRADE,0,1
+Hicks et al.,C7,reproducibility,partial,yes,UPGRADE,5,0
+Hilder et al.,C7,reproducibility,partial,no,DOWNGRADE,0,0
+Hilder et al.,C8,neg_results,partial,yes,UPGRADE,1,1
+Saki et al.,C1,sample_size,yes,no,DOWNGRADE,0,0
+Saki et al.,C5,overhead,yes,no,DOWNGRADE,0,0
+Saki et al.,C6,noise_model,partial,no,DOWNGRADE,0,0
+Saki et al.,C8,neg_results,yes,no,DOWNGRADE,0,0
+Hour et al.,C1,sample_size,partial,no,DOWNGRADE,0,0
+Hour et al.,C2,variance,partial,yes,UPGRADE,3,3
+Hour et al.,C4,drift,no,partial,UPGRADE,0,8
+Hour et al.,C7,reproducibility,partial,yes,UPGRADE,13,0
+Huang et al.,C5,overhead,yes,partial,DOWNGRADE,0,15
+Huang et al.,C7,reproducibility,partial,yes,UPGRADE,5,0
+Jin et al.,C5,overhead,yes,no,DOWNGRADE,0,0
+Jin et al.,C6,noise_model,partial,yes,UPGRADE,4,3
+Jin et al.,C7,reproducibility,partial,yes,UPGRADE,16,0
+Jin et al.,C8,neg_results,partial,no,DOWNGRADE,0,0
+Jnane et al.,C1,sample_size,partial,yes,UPGRADE,3,8
+Jnane et al.,C7,reproducibility,partial,yes,UPGRADE,1,0
+Jose & Simeone,C1,sample_size,yes,partial,DOWNGRADE,0,1
+Jose & Simeone,C5,overhead,yes,partial,DOWNGRADE,0,1
+Jose & Simeone,C6,noise_model,partial,yes,UPGRADE,5,12
+Jose & Simeone,C7,reproducibility,partial,yes,UPGRADE,4,0
+Jose & Simeone,C8,neg_results,yes,partial,DOWNGRADE,0,1
+Khan,C6,noise_model,partial,yes,UPGRADE,4,20
+Khan,C7,reproducibility,no,yes,UPGRADE,85,14
+Khan,C8,neg_results,no,yes,UPGRADE,2,20
+Khan et al.,C1,sample_size,partial,no,DOWNGRADE,0,0
+Khan et al.,C2,variance,partial,yes,UPGRADE,7,7
+Khan et al.,C4,drift,no,partial,UPGRADE,0,6
+Khan et al.,C5,overhead,no,partial,UPGRADE,0,3
+Khan et al.,C6,noise_model,partial,yes,UPGRADE,1,0
+Khan et al.,C7,reproducibility,partial,yes,UPGRADE,2,0
+Khan et al.,C8,neg_results,partial,yes,UPGRADE,1,5
+Kim et al. (utility),C5,overhead,yes,partial,DOWNGRADE,0,9
+Kim et al. (enhanced),C2,variance,partial,yes,UPGRADE,1,1
+Kim et al. (enhanced),C5,overhead,partial,yes,UPGRADE,1,5
+Kim et al. (enhanced),C6,noise_model,partial,yes,UPGRADE,5,11
+Kim et al. (enhanced),C7,reproducibility,partial,no,DOWNGRADE,0,0
+Kim et al. (enhanced),C8,neg_results,yes,partial,DOWNGRADE,0,2
+Kim et al. (enhanced),C2,variance,partial,yes,UPGRADE,5,11
+Kim et al. (enhanced),C4,drift,no,partial,UPGRADE,0,4
+Kim et al. (enhanced),C6,noise_model,partial,yes,UPGRADE,4,5
+Kim et al. (enhanced),C7,reproducibility,partial,yes,UPGRADE,10,0
+Kim et al. (enhanced),C8,neg_results,yes,no,DOWNGRADE,0,0
+Kiss et al.,C1,sample_size,partial,yes,UPGRADE,3,3
+Kiss et al.,C5,overhead,partial,yes,UPGRADE,2,9
+Kiss et al.,C7,reproducibility,partial,yes,UPGRADE,1,0
+Krebsbach et al.,C8,neg_results,yes,partial,DOWNGRADE,0,5
+Kurita et al.,C1,sample_size,partial,yes,UPGRADE,1,2
+Kurita et al.,C7,reproducibility,yes,partial,DOWNGRADE,0,1
+LaRose et al.,C4,drift,no,partial,UPGRADE,0,2
+LaRose et al.,C5,overhead,yes,no,DOWNGRADE,0,0
+LaRose et al.,C6,noise_model,partial,yes,UPGRADE,1,2
+LaRose et al.,C8,neg_results,partial,no,DOWNGRADE,0,0
+LaRose et al.,C4,drift,no,partial,UPGRADE,0,5
+LaRose et al.,C5,overhead,yes,partial,DOWNGRADE,0,46
+LaRose et al.,C6,noise_model,partial,yes,UPGRADE,10,27
+Liao et al.,C5,overhead,yes,partial,DOWNGRADE,0,34
+Liu & Cai,C7,reproducibility,partial,yes,UPGRADE,3,0
+Liu & Cai,C8,neg_results,partial,yes,UPGRADE,1,1
+Lorenz et al.,C8,neg_results,partial,yes,UPGRADE,1,18
+Mamedaliev et al.,C5,overhead,yes,partial,DOWNGRADE,0,2
+Mamedaliev et al.,C6,noise_model,partial,no,DOWNGRADE,0,0
+Maupin et al.,C8,neg_results,yes,partial,DOWNGRADE,0,2
+McDonough et al.,C2,variance,partial,yes,UPGRADE,5,5
+McDonough et al.,C3,stat_tests,partial,yes,UPGRADE,1,8
+McDonough et al.,C4,drift,no,partial,UPGRADE,0,4
+Moguel et al.,C8,neg_results,yes,partial,DOWNGRADE,0,6
+Niroula et al.,C1,sample_size,partial,yes,UPGRADE,2,0
+Niroula et al.,C2,variance,partial,yes,UPGRADE,4,3
+Niroula et al.,C3,stat_tests,partial,yes,UPGRADE,2,38
+Niroula et al.,C7,reproducibility,partial,yes,UPGRADE,1,0
+Noel et al.,C4,drift,partial,no,DOWNGRADE,0,0
+Noel et al.,C6,noise_model,partial,yes,UPGRADE,2,7
+Noel et al.,C7,reproducibility,partial,yes,UPGRADE,9,0
+Noel et al.,C8,neg_results,yes,partial,DOWNGRADE,0,1
+Pascuzzi et al.,C1,sample_size,yes,no,DOWNGRADE,0,0
+Pascuzzi et al.,C4,drift,partial,no,DOWNGRADE,0,0
+Pascuzzi et al.,C5,overhead,partial,no,DOWNGRADE,0,0
+Pascuzzi et al.,C7,reproducibility,yes,no,DOWNGRADE,0,0
+Pascuzzi et al.,C8,neg_results,partial,no,DOWNGRADE,0,0
+Patil et al.,C2,variance,yes,no,DOWNGRADE,0,0
+Patil et al.,C3,stat_tests,partial,no,DOWNGRADE,0,0
+Pelofske et al.,C3,stat_tests,partial,yes,UPGRADE,1,1
+Pelofske et al.,C6,noise_model,partial,yes,UPGRADE,3,5
+Prodius et al.,C5,overhead,yes,partial,DOWNGRADE,0,2
+Prodius et al.,C8,neg_results,partial,yes,UPGRADE,1,6
+Qin et al.,C7,reproducibility,partial,yes,UPGRADE,4,0
+Quek et al.,C8,neg_results,yes,partial,DOWNGRADE,0,10
+Roy et al.,C3,stat_tests,partial,yes,UPGRADE,1,38
+Roy et al.,C4,drift,no,partial,UPGRADE,0,5
+Roy et al.,C6,noise_model,partial,yes,UPGRADE,1,10
+Roy et al.,C8,neg_results,yes,no,DOWNGRADE,0,0
+Russo et al.,C3,stat_tests,partial,yes,UPGRADE,1,2
+Russo et al.,C4,drift,no,partial,UPGRADE,0,2
+Russo et al.,C5,overhead,yes,partial,DOWNGRADE,0,3
+Russo et al.,C6,noise_model,partial,yes,UPGRADE,4,4
+Russo et al.,C8,neg_results,yes,partial,DOWNGRADE,0,1
+Regent,C2,variance,partial,yes,UPGRADE,6,3
+Regent,C3,stat_tests,partial,yes,UPGRADE,1,6
+Sahu & Gupta,C1,sample_size,partial,no,DOWNGRADE,0,0
+Sahu & Gupta,C5,overhead,partial,no,DOWNGRADE,0,0
+Sahu & Gupta,C7,reproducibility,partial,yes,UPGRADE,25,0
+Saki et al.,C5,overhead,yes,no,DOWNGRADE,0,0
+Saki et al.,C8,neg_results,yes,partial,DOWNGRADE,0,8
+Schultz et al.,C4,drift,yes,partial,DOWNGRADE,0,3
+Schultz et al.,C5,overhead,yes,partial,DOWNGRADE,0,68
+Schultz et al.,C7,reproducibility,partial,yes,UPGRADE,3,2
+Schultz et al.,C8,neg_results,yes,partial,DOWNGRADE,0,4
+Seif et al.,C5,overhead,yes,partial,DOWNGRADE,0,15
+Seif et al.,C7,reproducibility,partial,no,DOWNGRADE,0,0
+Seif et al.,C8,neg_results,yes,partial,DOWNGRADE,0,8
+Senapati et al. (2023),C1,sample_size,partial,no,DOWNGRADE,0,0
+Senapati et al. (2023),C2,variance,yes,partial,DOWNGRADE,0,1
+Senapati et al. (2023),C4,drift,yes,partial,DOWNGRADE,0,6
+Senapati et al. (2023),C5,overhead,no,partial,UPGRADE,0,1
+Senapati et al. (2023),C8,neg_results,yes,partial,DOWNGRADE,0,1
+Senapati et al. (2024),C1,sample_size,yes,no,DOWNGRADE,0,0
+Senapati et al. (2024),C4,drift,yes,partial,DOWNGRADE,0,16
+Senapati et al. (2024),C5,overhead,no,partial,UPGRADE,0,1
+Senapati et al. (2024),C8,neg_results,yes,partial,DOWNGRADE,0,10
+Shi & Malaney,C1,sample_size,yes,no,DOWNGRADE,0,0
+Shi & Malaney,C2,variance,partial,no,DOWNGRADE,0,0
+Shi & Malaney,C4,drift,no,partial,UPGRADE,0,8
+Shi & Malaney,C5,overhead,yes,partial,DOWNGRADE,0,3
+Shi & Malaney,C6,noise_model,partial,yes,UPGRADE,2,5
+Shi & Malaney,C7,reproducibility,partial,yes,UPGRADE,17,1
+Shi & Malaney,C8,neg_results,yes,partial,DOWNGRADE,0,2
+Takagi et al. (2022),C8,neg_results,yes,partial,DOWNGRADE,0,5
+Takagi et al. (2023),C1,sample_size,yes,no,DOWNGRADE,0,0
+Takagi et al. (2023),C7,reproducibility,partial,yes,UPGRADE,1,0
+Tindall et al.,C1,sample_size,partial,yes,UPGRADE,1,0
+Tindall et al.,C2,variance,partial,no,DOWNGRADE,0,0
+Tindall et al.,C5,overhead,partial,yes,UPGRADE,1,3
+Tran et al.,C1,sample_size,partial,yes,UPGRADE,4,0
+Tran et al.,C7,reproducibility,partial,no,DOWNGRADE,0,0
+Urbanek et al.,C5,overhead,partial,no,DOWNGRADE,0,0
+Urbanek et al.,C7,reproducibility,partial,no,DOWNGRADE,0,0
+Urbanek et al.,C8,neg_results,partial,yes,UPGRADE,1,1
+Venere et al.,C1,sample_size,partial,no,DOWNGRADE,0,0
+Venere et al.,C2,variance,partial,no,DOWNGRADE,0,0
+Venere et al.,C5,overhead,no,partial,UPGRADE,0,1
+Venere et al.,C7,reproducibility,partial,yes,UPGRADE,1,1
+Wahl et al.,C1,sample_size,yes,no,DOWNGRADE,0,0
+Wahl et al.,C2,variance,partial,yes,UPGRADE,4,0
+Wahl et al.,C3,stat_tests,partial,yes,UPGRADE,2,4
+Wahl et al.,C6,noise_model,partial,yes,UPGRADE,3,8
+Wang et al.,C4,drift,partial,no,DOWNGRADE,0,0
+Wang et al.,C7,reproducibility,partial,yes,UPGRADE,23,0
+Wang et al.,C8,neg_results,yes,partial,DOWNGRADE,0,2
+Weaving et al.,C5,overhead,partial,yes,UPGRADE,1,4
+Weaving et al.,C6,noise_model,yes,partial,DOWNGRADE,0,2
+Weaving et al.,C8,neg_results,yes,partial,DOWNGRADE,0,4
+Weidinger et al.,C4,drift,partial,no,DOWNGRADE,0,0
+Weidinger et al.,C5,overhead,partial,yes,UPGRADE,1,4
+Weidinger et al.,C7,reproducibility,partial,yes,UPGRADE,4,0
+White,C3,stat_tests,partial,yes,UPGRADE,5,149
+White,C4,drift,yes,partial,DOWNGRADE,0,5
+White,C5,overhead,yes,partial,DOWNGRADE,0,24
+White,C7,reproducibility,yes,no,DOWNGRADE,0,0
+Wu et al.,C1,sample_size,yes,no,DOWNGRADE,0,0
+Wu et al.,C2,variance,partial,no,DOWNGRADE,0,0
+Wu et al.,C3,stat_tests,no,yes,UPGRADE,1,0
+Wu et al.,C7,reproducibility,partial,yes,UPGRADE,9,0
+Younis et al.,C7,reproducibility,no,yes,UPGRADE,2,1
+Younis et al.,C8,neg_results,partial,yes,UPGRADE,1,30
+Zhang et al.,C5,overhead,yes,partial,DOWNGRADE,0,20
+Zheng et al.,C1,sample_size,partial,yes,UPGRADE,5,3
+Zheng et al.,C2,variance,yes,no,DOWNGRADE,0,0
+Zheng et al.,C4,drift,partial,no,DOWNGRADE,0,0
+Zheng et al.,C5,overhead,partial,no,DOWNGRADE,0,0
+Zheng et al.,C6,noise_model,yes,partial,DOWNGRADE,0,17
+Zheng et al.,C8,neg_results,partial,no,DOWNGRADE,0,0
+van den Berg et al. (2022),C5,overhead,yes,partial,DOWNGRADE,0,7
+van den Berg et al. (2022),C7,reproducibility,yes,no,DOWNGRADE,0,0

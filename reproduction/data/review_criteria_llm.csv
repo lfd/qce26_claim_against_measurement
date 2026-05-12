@@ -1,0 +1,82 @@
+paper,year,category,sample_size,variance,stat_tests,drift,overhead,noise_model,reproducibility,neg_results
+Tran et al.,2023,QEM Methods,partial,yes,partial,na,yes,yes,partial,partial
+Filippov et al. (2024),2024,QEM Methods,yes,yes,partial,yes,yes,yes,partial,yes
+Khan et al.,2024,QEM Methods,partial,partial,partial,no,no,partial,partial,partial
+McDonough et al.,2022,QEM Methods,yes,partial,partial,no,yes,yes,yes,partial
+Zhang et al.,2025,QEM Methods,yes,yes,partial,partial,yes,yes,yes,yes
+Qin et al.,2023,QEM Methods,yes,yes,partial,na,yes,yes,partial,yes
+Liao et al.,2024,QEM Methods,yes,yes,yes,partial,yes,yes,yes,yes
+Majumdar et al.,2023,QEM Methods,yes,yes,partial,partial,yes,yes,yes,yes
+Wahl et al.,2023,QEM Methods,yes,partial,partial,na,yes,partial,yes,partial
+Hour et al.,2024,QEM Methods,partial,partial,partial,no,partial,yes,partial,partial
+Jnane et al.,2024,QEM Methods,partial,yes,na,partial,yes,yes,partial,partial
+Henao et al.,2023,QEM Methods,partial,partial,partial,yes,partial,yes,partial,yes
+Filippov et al. (2023),2023,QEM Methods,yes,yes,partial,na,yes,yes,partial,partial
+LaRose et al.,2022,QEM Methods,yes,yes,yes,no,yes,partial,yes,partial
+Pascuzzi et al.,2022,QEM Methods,yes,yes,partial,partial,partial,yes,yes,partial
+Liu & Cai,2025,QEM Methods,yes,yes,yes,na,yes,partial,partial,partial
+Seif et al.,2023,QEM Methods,yes,yes,partial,partial,yes,partial,partial,yes
+Hicks et al.,2022,QEM Methods,partial,partial,partial,no,yes,yes,partial,yes
+van den Berg et al. (2022),2022,QEM Methods,yes,yes,partial,yes,yes,yes,yes,partial
+Krebsbach et al.,2022,QEM Methods,yes,yes,partial,na,yes,partial,yes,yes
+Kim et al. (enhanced),2025,QEM Methods,yes,partial,partial,no,partial,partial,partial,yes
+Kiss et al.,2025,QEM Methods,partial,yes,yes,partial,partial,yes,partial,partial
+Jin et al.,2025,QEM Methods,na,na,na,na,yes,partial,partial,partial
+van den Berg et al. (2023),2023,QEM Methods,yes,yes,partial,partial,yes,yes,yes,partial
+Takagi et al. (2022),2022,Fundamental Limits,na,na,na,na,yes,yes,yes,yes
+Takagi et al. (2023),2023,Fundamental Limits,yes,yes,na,na,yes,yes,partial,yes
+Quek et al.,2024,Fundamental Limits,na,na,na,na,yes,yes,yes,yes
+Niroula et al.,2025,Fundamental Limits,partial,partial,partial,na,yes,yes,partial,yes
+Jose & Simeone,2022,Fundamental Limits,yes,yes,partial,na,yes,partial,partial,yes
+White,2025,Fundamental Limits,yes,yes,partial,yes,yes,yes,yes,yes
+Franca & Garcia-Patron,2022,Fundamental Limits,na,na,na,na,yes,yes,partial,yes
+Saki et al.,2023,Experimental,yes,yes,yes,partial,yes,partial,yes,yes
+Govia et al.,2025,Experimental,partial,partial,partial,yes,partial,yes,yes,yes
+Maupin et al.,2024,Experimental,yes,yes,partial,yes,yes,yes,yes,yes
+Kurita et al.,2023,Experimental,partial,yes,partial,na,partial,yes,yes,yes
+Russo et al.,2023,Experimental,yes,yes,partial,no,yes,partial,yes,yes
+Kim et al. (stabilized),2025,Experimental,yes,yes,partial,yes,yes,yes,yes,yes
+Weaving et al.,2023,Experimental,yes,yes,yes,partial,partial,yes,yes,yes
+Dutkiewicz et al.,2025,Experimental,yes,yes,partial,na,yes,yes,yes,yes
+Amin et al.,2023,Experimental,partial,partial,partial,yes,partial,yes,partial,yes
+Kim et al. (utility),2023,Experimental,yes,yes,partial,partial,yes,yes,yes,yes
+Roy et al.,2024,Experimental,yes,no,partial,no,partial,partial,yes,yes
+Shi & Malaney,2023,Experimental,yes,partial,no,no,yes,partial,partial,yes
+Venere et al.,2024,Experimental,partial,partial,no,na,no,partial,partial,partial
+Bultrini et al.,2023,Benchmarking,yes,yes,partial,na,yes,yes,partial,yes
+Cirstoiu et al.,2023,Benchmarking,yes,yes,partial,partial,yes,yes,yes,yes
+Prodius et al.,2025,Benchmarking,yes,yes,partial,na,yes,yes,yes,partial
+Mamedaliev et al.,2026,Benchmarking,yes,yes,yes,na,yes,partial,yes,partial
+Moguel et al.,2024,Benchmarking,na,na,na,na,na,na,yes,yes
+Zheng et al.,2023,Benchmarking,partial,yes,yes,partial,partial,yes,yes,partial
+Hirasaki et al.,2023,Reproducibility & Drift,yes,partial,partial,yes,partial,partial,partial,partial
+Senapati et al. (2023),2023,Reproducibility & Drift,partial,yes,partial,yes,no,partial,yes,yes
+Senapati et al. (2024),2024,Reproducibility & Drift,yes,yes,partial,yes,no,partial,yes,yes
+Cai et al.,2023,Reviews & Surveys,na,yes,na,partial,yes,yes,na,yes
+Bharti,2022,Reviews & Surveys,na,na,na,na,partial,partial,na,yes
+Lorenz et al.,2025,Reviews & Surveys,na,na,na,partial,partial,partial,yes,partial
+Njoki,2024,Reviews & Surveys,na,na,na,na,na,na,no,no
+Regent,2025,Reviews & Surveys,na,partial,partial,na,na,na,yes,partial
+Khan,2025,Reviews & Surveys,na,na,na,na,na,partial,no,no
+Younis et al.,2024,Reviews & Surveys,na,na,na,na,na,na,no,partial
+LaRose et al. (Mitiq),2022,Reviews & Surveys,partial,yes,no,no,yes,partial,yes,yes
+AbuGhanem,2024,Reviews & Surveys,na,partial,na,na,partial,partial,partial,no
+Hilder et al.,2022,Adjacent Topics,yes,yes,partial,partial,na,yes,partial,partial
+Noel et al.,2022,Adjacent Topics,yes,yes,yes,partial,na,partial,partial,yes
+Wu et al.,2022,Adjacent Topics,yes,partial,no,na,partial,yes,partial,partial
+English et al.,2025,Adjacent Topics,na,na,na,na,partial,yes,partial,yes
+Chernyak et al.,2026,Adjacent Topics,yes,yes,partial,na,partial,no,yes,yes
+Etim & Szefer,2025,Adjacent Topics,yes,partial,no,na,na,partial,yes,yes
+Acharya et al. (Willow),2025,Adjacent Topics,yes,yes,yes,yes,yes,yes,yes,yes
+Sahu & Gupta,2024,Adjacent Topics,partial,yes,partial,na,partial,yes,partial,partial
+Tindall et al.,2024,Adjacent Topics,partial,partial,no,na,partial,na,yes,partial
+Campbell et al.,2023,Adjacent Topics,partial,partial,partial,no,partial,partial,yes,partial
+Halder et al.,2023,QEM Methods,partial,yes,partial,partial,yes,yes,partial,yes
+Patil et al.,2023,QEM Methods,yes,yes,partial,partial,yes,yes,yes,yes
+Weidinger et al.,2023,QEM Methods,partial,yes,partial,partial,partial,yes,partial,partial
+Pelofske et al.,2024,Benchmarking,yes,yes,partial,partial,yes,partial,yes,yes
+Schultz et al.,2022,Fundamental Limits,yes,yes,partial,yes,yes,yes,partial,yes
+Huang et al.,2023,Reviews & Surveys,na,yes,partial,partial,yes,yes,partial,yes
+Czarnik et al.,2021,Foundational,yes,yes,partial,no,yes,yes,partial,yes
+Wang et al.,2021,Foundational,yes,yes,partial,partial,yes,yes,partial,yes
+Urbanek et al.,2021,Foundational,yes,yes,partial,no,partial,yes,partial,partial

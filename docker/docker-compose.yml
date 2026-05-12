@@ -1,0 +1,20 @@
+services:
+  dev:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    image: qem_reproduction
+    logging:
+      driver: "none"
+    volumes:
+      - ..:/qem_reproduction
+    working_dir: /qem_reproduction
+    stdin_open: true
+    tty: true
+
+  repro:
+    image: qem_reproduction
+    volumes:
+      - ..:/qem_reproduction
+    working_dir: /qem_reproduction
+    command: make repro
