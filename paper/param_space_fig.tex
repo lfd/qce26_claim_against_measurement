@@ -12,7 +12,7 @@
 \definecolor{lfdBlue}{HTML}{1F78B4}
 
 \begin{document}
-\begin{tikzpicture}[scale=0.85, every node/.style={font=\small}]
+\begin{tikzpicture}[scale=0.80, every node/.style={font=\small}]
 
     % === Legend (above the outer circle) ===
     \begin{scope}[shift={(0,4.6)}]
@@ -69,7 +69,7 @@
     % === Reader's reproduction circle (slightly larger, dashed) ===
     \draw[lfdBlue, thick, dashed] (0.3,-0.2) circle (2.35);
     \node[lfdBlue, font=\footnotesize, align=center, anchor=south]
-      at (-0, 2.05)
+      at (0.05, 2.05)
       {Replication's search region\\[-2pt]
        $\{\theta_\text{doc}\}{\times}\,\mathrm{Range}(\theta_\text{undoc})$};
 

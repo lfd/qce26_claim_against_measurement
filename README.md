@@ -54,7 +54,9 @@ claim_against_measurement/
     │   ├── khan_backend.py                 # Khan et al.: full parameter-space sweep
     │   ├── generate_desdentado_original_boxplot.py
     │   ├── multiple_comparisons.py         # Bonferroni/Holm/BH correction (stdout only)
-    │   └── scan_all_criteria.py            # LLM scan of 81 PDFs for criteria C1-C8
+    │   ├── scan_all_criteria.py            # LLM scan of 81 PDFs for criteria C1-C8
+    │   ├── full_statistics.py              # Drift: paired t/Wilcoxon, Cohen's d, Cliff's δ, Durbin-Watson
+    │   └── power_analysis.py               # Drift: ICC, effective N, power analysis (Table drift-summary)
     ├── hardware/                # Real-hardware collection scripts (not in Makefile)
     │   ├── drift_qexa_week.py              # QExa longitudinal drift (requires MQSS_TOKEN)
     │   └── drift_ibm.py                    # IBM longitudinal drift (requires IBM_QUANTUM_TOKEN)
@@ -86,6 +88,33 @@ build/                           # Generated output — not git-tracked, created
 | `make repro_docker` | Same as above, but run inside Docker                       |
 | `make dev`          | Start a development environment inside Docker              |
 | `make clean`        | Remove `build/`                                            |
+
+## Drift Statistics (`full_statistics.py`, `power_analysis.py`)
+
+`make repro` runs both scripts once per drift session (`first_run`, `day2_full`,
+`weekend` — the three sessions in `tab:drift-summary`), writing per-session logs
+and CSVs to `build/results/drift_stats/<session>/`:
+
+- `drift_stats_per_tp.csv`, `drift_stats_summary.csv`, `drift_stats_report.txt` —
+  paired t-test / Wilcoxon signed-rank, Cohen's d, Cliff's delta, Durbin-Watson
+  (`full_statistics.py`).
+- `drift_power.csv`, `drift_power_summary.txt` — ICC (one-way), lag-autocorrelation,
+  and Durbin-Watson (`power_analysis.py`).
+
+These underpin the ICC, r1, and Cohen's d range figures reported for
+each session in `tab:drift-summary`. Both scripts assume the `qexa_drift` CSV
+schema (`timepoint_idx, timestamp, backend, rep, scale_factor, exp_val, n_shots, ideal`);
+they are **not** compatible with `ibm_drift_results/raw_data_ibm_drift.csv`, which
+uses a different, more minimal schema (no `ideal`/`backend`/`n_shots` columns) and
+is not part of `tab:drift-summary`. Both scripts can also be run standalone against
+any `qexa_drift/raw_data_*.csv` file, e.g.:
+
+```bash
+cd reproduction
+python scripts/full_statistics.py --csv data/qexa_drift/raw_data_weekend.csv
+python scripts/power_analysis.py --csv data/qexa_drift/raw_data_weekend.csv
+```
+
 
 ## Backends
 

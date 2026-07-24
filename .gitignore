@@ -12,3 +12,5 @@ main.pdf
 build/
 __pycache__/
 paper/references.bib
+bib_lib/
+paper_arXiv/

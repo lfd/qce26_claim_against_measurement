@@ -29,6 +29,11 @@ DESDENTADO_INPUT=$(wildcard $(D_DATA)/desdentado_original/summary_*shots.csv)
 KHAN_RESULTS=$(D_RESULTS)/khan_detail.csv $(D_RESULTS)/khan_power.csv $(D_RESULTS)/khan_shots.csv $(D_RESULTS)/khan_summary.csv
 MC_RESULT=$(D_RESULTS)/khan_multiple_comparisons.csv
 
+# Drift statistics (Table tab:drift-summary: eta^2/ICC, r1, n_eff, Cohen's d range)
+DRIFT_SESSIONS=first_run day2_full weekend
+D_DRIFT_STATS=$(D_RESULTS)/drift_stats
+DRIFT_STATS_RESULT=$(addsuffix /drift_stats_summary.csv,$(addprefix $(D_DRIFT_STATS)/,$(DRIFT_SESSIONS)))
+
 # Rules
 all: build/$(JOB).pdf
 
@@ -45,7 +50,7 @@ repro_docker: $(COMPOSE)
 	$(DC) -f $^ run --rm repro
 	make
 
-repro: plots $(MC_RESULT)
+repro: plots $(MC_RESULT) $(DRIFT_STATS_RESULT)
 	echo "Up to date!"
 
 $(OUTDIRS):
@@ -75,6 +80,12 @@ $(D_PLOTS)/desdentado_sweep.tex &: $(D_R)/plot_desdentado_original.R $(DESDENTAD
 
 $(D_PLOTS)/drift_combined_all.tex &: $(D_R)/plot_drift.R $(D_DATA)/qexa_drift/raw_data_first_run.csv $(D_DATA)/qexa_drift/raw_data_day2_full.csv $(D_DATA)/qexa_drift/raw_data_weekend.csv | $(OUTDIRS)
 	$(R) $<
+
+# Drift power/ICC/autocorrelation statistics, one run per session, logged separately
+$(D_DRIFT_STATS)/%/drift_stats_summary.csv $(D_DRIFT_STATS)/%/drift_power_summary.txt &: $(D_SCRIPTS)/full_statistics.py $(D_SCRIPTS)/power_analysis.py $(D_DATA)/qexa_drift/raw_data_%.csv | $(OUTDIRS)
+	mkdir -p $(D_DRIFT_STATS)/$*
+	$(PY) $(D_SCRIPTS)/full_statistics.py --csv $(D_DATA)/qexa_drift/raw_data_$*.csv --outdir $(D_DRIFT_STATS)/$*
+	$(PY) $(D_SCRIPTS)/power_analysis.py --csv $(D_DATA)/qexa_drift/raw_data_$*.csv --outdir $(D_DRIFT_STATS)/$*
 
 $(D_PLOTS)/drift_week.tex &: $(D_R)/plot_drift_week.R $(D_DATA)/qexa_drift/raw_data_week.csv | $(OUTDIRS)
 	$(R) $<
